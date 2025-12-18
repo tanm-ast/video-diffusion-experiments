@@ -1,0 +1,52 @@
+# Outputs (large files, generated)
+outputs/
+*.gif
+*.mp4
+*.avi
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Model weights (download on demand)
+*.bin
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+
+# HuggingFace cache (if accidentally placed in repo)
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

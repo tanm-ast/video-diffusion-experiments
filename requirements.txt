@@ -1,0 +1,20 @@
+# Core ML
+torch>=2.0.0
+torchvision
+
+# Diffusion models
+diffusers>=0.25.0
+transformers>=4.30.0
+accelerate>=0.20.0
+
+# Utilities
+einops>=0.6.0
+opencv-python>=4.8.0
+imageio[ffmpeg]>=2.31.0
+
+# Analysis and metrics
+lpips>=0.1.4
+flowpy>=0.6.0
+
+# Optional: for better progress bars
+tqdm>=4.65.0
