@@ -1,0 +1,148 @@
+{
+  "experiment_id": "corgi_beach_low_cfg_only",
+  "video_name": "corgi_beach",
+  "hypothesis": "cfg_only",
+  "config": {
+    "experiment_id": "corgi_beach_low_cfg_only",
+    "video_name": "corgi_beach",
+    "prompt": "a corgi walking on the beach, sunset lighting, high quality",
+    "negative_prompt": "bad quality, blurry, distorted",
+    "guidance_scale": 5.5,
+    "num_inference_steps": 25,
+    "hypothesis": "cfg_only"
+  },
+  "num_frames": 16,
+  "mse_mean": 0.017823336459696294,
+  "mse_std": 0.005251153345220543,
+  "mse_variance": 2.7574611455020897e-05,
+  "psnr_mean": 17.67182993364864,
+  "lpips_mean": 0.3350926478703817,
+  "lpips_std": 0.030176542923343035,
+  "flow_magnitude_mean": 7.405212116241455,
+  "flow_variance": 3.420073618503247,
+  "warp_error_mean": 0.02019716314971447,
+  "temporal_consistency_score": 19.019852522345914,
+  "flicker_index": 0.1658095664211682,
+  "frame_metrics": [
+    {
+      "frame_idx": 0,
+      "mse": 0.01309849601238966,
+      "psnr": 18.82778567780704,
+      "lpips": 0.2842811942100525,
+      "flow_magnitude": 5.636396884918213,
+      "warp_error": 0.015013269148766994
+    },
+    {
+      "frame_idx": 1,
+      "mse": 0.013080389238893986,
+      "psnr": 18.83379332327607,
+      "lpips": 0.25879940390586853,
+      "flow_magnitude": 5.468790531158447,
+      "warp_error": 0.014760966412723064
+    },
+    {
+      "frame_idx": 2,
+      "mse": 0.010376774705946445,
+      "psnr": 19.83937612294252,
+      "lpips": 0.3348006010055542,
+      "flow_magnitude": 5.058775424957275,
+      "warp_error": 0.010214249603450298
+    },
+    {
+      "frame_idx": 3,
+      "mse": 0.014435465447604656,
+      "psnr": 18.405692084533385,
+      "lpips": 0.3628339171409607,
+      "flow_magnitude": 5.493795394897461,
+      "warp_error": 0.015948913991451263
+    },
+    {
+      "frame_idx": 4,
+      "mse": 0.014169958420097828,
+      "psnr": 18.48631424131408,
+      "lpips": 0.3730334937572479,
+      "flow_magnitude": 5.336666107177734,
+      "warp_error": 0.014025166630744934
+    },
+    {
+      "frame_idx": 5,
+      "mse": 0.014010108076035976,
+      "psnr": 18.535585144897418,
+      "lpips": 0.37387341260910034,
+      "flow_magnitude": 4.819070339202881,
+      "warp_error": 0.015586313791573048
+    },
+    {
+      "frame_idx": 6,
+      "mse": 0.017708973959088326,
+      "psnr": 17.518066006854095,
+      "lpips": 0.3373558819293976,
+      "flow_magnitude": 9.042908668518066,
+      "warp_error": 0.019844042137265205
+    },
+    {
+      "frame_idx": 7,
+      "mse": 0.028141148388385773,
+      "psnr": 15.506581837824891,
+      "lpips": 0.36304453015327454,
+      "flow_magnitude": 8.978384971618652,
+      "warp_error": 0.028879916295409203
+    },
+    {
+      "frame_idx": 8,
+      "mse": 0.023436635732650757,
+      "psnr": 16.301047300092243,
+      "lpips": 0.3419325053691864,
+      "flow_magnitude": 7.111088275909424,
+      "warp_error": 0.02547513134777546
+    },
+    {
+      "frame_idx": 9,
+      "mse": 0.023869195953011513,
+      "psnr": 16.2216221019524,
+      "lpips": 0.34954530000686646,
+      "flow_magnitude": 9.268157005310059,
+      "warp_error": 0.026423005387187004
+    },
+    {
+      "frame_idx": 10,
+      "mse": 0.014559842646121979,
+      "psnr": 18.368433185868692,
+      "lpips": 0.31560832262039185,
+      "flow_magnitude": 9.094493865966797,
+      "warp_error": 0.02018916979432106
+    },
+    {
+      "frame_idx": 11,
+      "mse": 0.014971508644521236,
+      "psnr": 18.247344345949355,
+      "lpips": 0.33139148354530334,
+      "flow_magnitude": 8.705544471740723,
+      "warp_error": 0.019306471571326256
+    },
+    {
+      "frame_idx": 12,
+      "mse": 0.02520635537803173,
+      "psnr": 15.984899450271,
+      "lpips": 0.32939982414245605,
+      "flow_magnitude": 8.34288501739502,
+      "warp_error": 0.02875438891351223
+    },
+    {
+      "frame_idx": 13,
+      "mse": 0.02291753701865673,
+      "psnr": 16.398320584622077,
+      "lpips": 0.34140485525131226,
+      "flow_magnitude": 10.481200218200684,
+      "warp_error": 0.028570063412189484
+    },
+    {
+      "frame_idx": 14,
+      "mse": 0.017367657274007797,
+      "psnr": 17.602587596524284,
+      "lpips": 0.32908499240875244,
+      "flow_magnitude": 8.24002456665039,
+      "warp_error": 0.019966378808021545
+    }
+  ]
+}

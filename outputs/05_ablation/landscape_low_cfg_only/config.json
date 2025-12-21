@@ -1,0 +1,9 @@
+{
+  "experiment_id": "landscape_low_cfg_only",
+  "video_name": "landscape",
+  "prompt": "a beautiful mountain landscape, lake reflection, golden hour, still water, serene",
+  "negative_prompt": "bad quality, blurry, distorted",
+  "guidance_scale": 7.0,
+  "num_inference_steps": 25,
+  "hypothesis": "cfg_only"
+}

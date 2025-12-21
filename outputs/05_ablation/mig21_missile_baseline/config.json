@@ -1,0 +1,9 @@
+{
+  "experiment_id": "mig21_missile_baseline",
+  "video_name": "mig21_missile",
+  "prompt": "MiG-21 fighter jet firing missile, smooth motion blur, cinematic, steady shot",
+  "negative_prompt": "bad quality, blurry, distorted",
+  "guidance_scale": 7.5,
+  "num_inference_steps": 25,
+  "hypothesis": "baseline"
+}

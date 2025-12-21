@@ -1,0 +1,148 @@
+{
+  "experiment_id": "landscape_prompt_only",
+  "video_name": "landscape",
+  "hypothesis": "prompt_only",
+  "config": {
+    "experiment_id": "landscape_prompt_only",
+    "video_name": "landscape",
+    "prompt": "a beautiful mountain landscape, lake reflection, golden hour, still water, serene",
+    "negative_prompt": "flickering water, rippling, moving clouds, windy, bad quality, blurry, distorted",
+    "guidance_scale": 7.5,
+    "num_inference_steps": 25,
+    "hypothesis": "prompt_only"
+  },
+  "num_frames": 16,
+  "mse_mean": 0.007533051570256551,
+  "mse_std": 0.004191637284159585,
+  "mse_variance": 1.7569823121956748e-05,
+  "psnr_mean": 22.019648926848273,
+  "lpips_mean": 0.08909770250320434,
+  "lpips_std": 0.036447053352704165,
+  "flow_magnitude_mean": 0.22753949960072836,
+  "flow_variance": 0.001329639514937813,
+  "warp_error_mean": 0.007619712936381499,
+  "temporal_consistency_score": 5.889953954355262,
+  "flicker_index": 0.12799291153039252,
+  "frame_metrics": [
+    {
+      "frame_idx": 0,
+      "mse": 0.008405094966292381,
+      "psnr": 20.754573752520237,
+      "lpips": 0.08438266813755035,
+      "flow_magnitude": 0.26537251472473145,
+      "warp_error": 0.008675303310155869
+    },
+    {
+      "frame_idx": 1,
+      "mse": 0.007189346011728048,
+      "psnr": 21.43310613986468,
+      "lpips": 0.0806027352809906,
+      "flow_magnitude": 0.25327247381210327,
+      "warp_error": 0.007393988315016031
+    },
+    {
+      "frame_idx": 2,
+      "mse": 0.0031050806865096092,
+      "psnr": 25.07927110060477,
+      "lpips": 0.10197893530130386,
+      "flow_magnitude": 0.23767432570457458,
+      "warp_error": 0.0027894682716578245
+    },
+    {
+      "frame_idx": 3,
+      "mse": 0.012122463434934616,
+      "psnr": 19.164091171757356,
+      "lpips": 0.18684454262256622,
+      "flow_magnitude": 0.2866169512271881,
+      "warp_error": 0.012658613733947277
+    },
+    {
+      "frame_idx": 4,
+      "mse": 0.003389572026208043,
+      "psnr": 24.698551331803074,
+      "lpips": 0.10230475664138794,
+      "flow_magnitude": 0.202438622713089,
+      "warp_error": 0.003146449336782098
+    },
+    {
+      "frame_idx": 5,
+      "mse": 0.005028795450925827,
+      "psnr": 22.985360291913345,
+      "lpips": 0.07890984416007996,
+      "flow_magnitude": 0.2108640968799591,
+      "warp_error": 0.0053460500203073025
+    },
+    {
+      "frame_idx": 6,
+      "mse": 0.0019670540932565928,
+      "psnr": 27.06183696979582,
+      "lpips": 0.03531547263264656,
+      "flow_magnitude": 0.13714785873889923,
+      "warp_error": 0.002075405092909932
+    },
+    {
+      "frame_idx": 7,
+      "mse": 0.012486815452575684,
+      "psnr": 19.035483068394694,
+      "lpips": 0.11385755240917206,
+      "flow_magnitude": 0.2599559426307678,
+      "warp_error": 0.012109395116567612
+    },
+    {
+      "frame_idx": 8,
+      "mse": 0.009898442775011063,
+      "psnr": 20.044331233230924,
+      "lpips": 0.085508331656456,
+      "flow_magnitude": 0.22229845821857452,
+      "warp_error": 0.010046371258795261
+    },
+    {
+      "frame_idx": 9,
+      "mse": 0.014436617493629456,
+      "psnr": 18.40534550252006,
+      "lpips": 0.07920585572719574,
+      "flow_magnitude": 0.23409372568130493,
+      "warp_error": 0.014545050449669361
+    },
+    {
+      "frame_idx": 10,
+      "mse": 0.007681859657168388,
+      "psnr": 21.1453363139033,
+      "lpips": 0.057535119354724884,
+      "flow_magnitude": 0.21235302090644836,
+      "warp_error": 0.007893373258411884
+    },
+    {
+      "frame_idx": 11,
+      "mse": 0.004875946324318647,
+      "psnr": 23.119410838536005,
+      "lpips": 0.09619683027267456,
+      "flow_magnitude": 0.21259601414203644,
+      "warp_error": 0.005225593224167824
+    },
+    {
+      "frame_idx": 12,
+      "mse": 0.01466802041977644,
+      "psnr": 18.33628494117076,
+      "lpips": 0.1341744214296341,
+      "flow_magnitude": 0.27144575119018555,
+      "warp_error": 0.014386321417987347
+    },
+    {
+      "frame_idx": 13,
+      "mse": 0.005445744376629591,
+      "psnr": 22.63942748310912,
+      "lpips": 0.05498194694519043,
+      "flow_magnitude": 0.21958886086940765,
+      "warp_error": 0.005601093638688326
+    },
+    {
+      "frame_idx": 14,
+      "mse": 0.0022949203848838806,
+      "psnr": 26.392323763599922,
+      "lpips": 0.04466652497649193,
+      "flow_magnitude": 0.18737387657165527,
+      "warp_error": 0.002403217600658536
+    }
+  ]
+}

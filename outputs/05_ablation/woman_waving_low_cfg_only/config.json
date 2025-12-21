@@ -1,0 +1,9 @@
+{
+  "experiment_id": "woman_waving_low_cfg_only",
+  "video_name": "woman_waving",
+  "prompt": "a woman waving her hand, portrait, studio lighting, smooth natural motion",
+  "negative_prompt": "bad quality, blurry, distorted",
+  "guidance_scale": 6.5,
+  "num_inference_steps": 25,
+  "hypothesis": "cfg_only"
+}

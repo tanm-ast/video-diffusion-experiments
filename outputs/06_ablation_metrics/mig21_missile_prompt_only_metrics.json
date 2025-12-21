@@ -1,0 +1,148 @@
+{
+  "experiment_id": "mig21_missile_prompt_only",
+  "video_name": "mig21_missile",
+  "hypothesis": "prompt_only",
+  "config": {
+    "experiment_id": "mig21_missile_prompt_only",
+    "video_name": "mig21_missile",
+    "prompt": "MiG-21 fighter jet firing missile, smooth motion blur, cinematic, steady shot",
+    "negative_prompt": "flickering, jittery, teleporting, inconsistent trail, morphing, bad quality, blurry, distorted",
+    "guidance_scale": 7.5,
+    "num_inference_steps": 25,
+    "hypothesis": "prompt_only"
+  },
+  "num_frames": 16,
+  "mse_mean": 0.016381845436990262,
+  "mse_std": 0.004094187221176833,
+  "mse_variance": 1.6762369002047674e-05,
+  "psnr_mean": 17.98156879040767,
+  "lpips_mean": 0.26260154843330386,
+  "lpips_std": 0.03486520943185813,
+  "flow_magnitude_mean": 8.181006971995036,
+  "flow_variance": 3.107389367263079,
+  "warp_error_mean": 0.022388671711087226,
+  "temporal_consistency_score": 15.392815748729932,
+  "flicker_index": 0.1566096166414874,
+  "frame_metrics": [
+    {
+      "frame_idx": 0,
+      "mse": 0.013218778185546398,
+      "psnr": 18.78808684925821,
+      "lpips": 0.19161728024482727,
+      "flow_magnitude": 12.816617965698242,
+      "warp_error": 0.018703555688261986
+    },
+    {
+      "frame_idx": 1,
+      "mse": 0.013239502906799316,
+      "psnr": 18.78128320703481,
+      "lpips": 0.2115417867898941,
+      "flow_magnitude": 9.411115646362305,
+      "warp_error": 0.019263634458184242
+    },
+    {
+      "frame_idx": 2,
+      "mse": 0.012841414660215378,
+      "psnr": 18.913871300613348,
+      "lpips": 0.2745639383792877,
+      "flow_magnitude": 7.958817005157471,
+      "warp_error": 0.018941635265946388
+    },
+    {
+      "frame_idx": 3,
+      "mse": 0.018878448754549026,
+      "psnr": 17.24033694625746,
+      "lpips": 0.34184443950653076,
+      "flow_magnitude": 8.929658889770508,
+      "warp_error": 0.025577543303370476
+    },
+    {
+      "frame_idx": 4,
+      "mse": 0.017365699633955956,
+      "psnr": 17.603077150283926,
+      "lpips": 0.29293644428253174,
+      "flow_magnitude": 11.22736930847168,
+      "warp_error": 0.02456674911081791
+    },
+    {
+      "frame_idx": 5,
+      "mse": 0.016923973336815834,
+      "psnr": 17.7149766755741,
+      "lpips": 0.2628391981124878,
+      "flow_magnitude": 8.153862953186035,
+      "warp_error": 0.025082068517804146
+    },
+    {
+      "frame_idx": 6,
+      "mse": 0.014846793375909328,
+      "psnr": 18.28367335540498,
+      "lpips": 0.2484908103942871,
+      "flow_magnitude": 7.910971641540527,
+      "warp_error": 0.023001855239272118
+    },
+    {
+      "frame_idx": 7,
+      "mse": 0.0258619487285614,
+      "psnr": 15.873387536174787,
+      "lpips": 0.27506813406944275,
+      "flow_magnitude": 7.426586151123047,
+      "warp_error": 0.032633859664201736
+    },
+    {
+      "frame_idx": 8,
+      "mse": 0.018444113433361053,
+      "psnr": 17.34142215484766,
+      "lpips": 0.2632330656051636,
+      "flow_magnitude": 6.687343120574951,
+      "warp_error": 0.02385185845196247
+    },
+    {
+      "frame_idx": 9,
+      "mse": 0.02358185313642025,
+      "psnr": 16.274220696693195,
+      "lpips": 0.27987247705459595,
+      "flow_magnitude": 7.150821685791016,
+      "warp_error": 0.029541028663516045
+    },
+    {
+      "frame_idx": 10,
+      "mse": 0.015523881651461124,
+      "psnr": 18.089996768256903,
+      "lpips": 0.24530930817127228,
+      "flow_magnitude": 6.888134479522705,
+      "warp_error": 0.0212990865111351
+    },
+    {
+      "frame_idx": 11,
+      "mse": 0.012341885827481747,
+      "psnr": 19.0861847548151,
+      "lpips": 0.275466650724411,
+      "flow_magnitude": 8.29760456085205,
+      "warp_error": 0.017468081787228584
+    },
+    {
+      "frame_idx": 12,
+      "mse": 0.018837017938494682,
+      "psnr": 17.24987848643099,
+      "lpips": 0.29125910997390747,
+      "flow_magnitude": 6.579876899719238,
+      "warp_error": 0.023195361718535423
+    },
+    {
+      "frame_idx": 13,
+      "mse": 0.01218138262629509,
+      "psnr": 19.143034150782064,
+      "lpips": 0.22672396898269653,
+      "flow_magnitude": 6.016060829162598,
+      "warp_error": 0.016561925411224365
+    },
+    {
+      "frame_idx": 14,
+      "mse": 0.011640987358987331,
+      "psnr": 19.34010182368752,
+      "lpips": 0.25825661420822144,
+      "flow_magnitude": 7.260263442993164,
+      "warp_error": 0.016141831874847412
+    }
+  ]
+}

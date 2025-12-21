@@ -1,0 +1,9 @@
+{
+  "experiment_id": "corgi_beach_prompt_only",
+  "video_name": "corgi_beach",
+  "prompt": "a corgi walking on the beach, sunset lighting, steady camera, smooth motion, high quality",
+  "negative_prompt": "flickering water, unstable waves, jittery, morphing, handheld camera, shaky, bad quality, blurry, distorted",
+  "guidance_scale": 7.5,
+  "num_inference_steps": 25,
+  "hypothesis": "prompt_only"
+}

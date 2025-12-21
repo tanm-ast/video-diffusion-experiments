@@ -1,0 +1,148 @@
+{
+  "experiment_id": "birds_flying_baseline",
+  "video_name": "birds_flying",
+  "hypothesis": "baseline",
+  "config": {
+    "experiment_id": "birds_flying_baseline",
+    "video_name": "birds_flying",
+    "prompt": "birds flying across a blue sky, nature documentary, consistent shapes",
+    "negative_prompt": "bad quality, blurry, distorted",
+    "guidance_scale": 7.5,
+    "num_inference_steps": 25,
+    "hypothesis": "baseline"
+  },
+  "num_frames": 16,
+  "mse_mean": 0.02192168552428484,
+  "mse_std": 0.005353118355007436,
+  "mse_variance": 2.865587612271752e-05,
+  "psnr_mean": 16.71728878443018,
+  "lpips_mean": 0.37664673924446107,
+  "lpips_std": 0.04741322806621158,
+  "flow_magnitude_mean": 4.393365748723348,
+  "flow_variance": 0.36413914468490227,
+  "warp_error_mean": 0.024358681216835976,
+  "temporal_consistency_score": 22.17716848860355,
+  "flicker_index": 0.15371577069163322,
+  "frame_metrics": [
+    {
+      "frame_idx": 0,
+      "mse": 0.017079351469874382,
+      "psnr": 17.67528624185787,
+      "lpips": 0.32490891218185425,
+      "flow_magnitude": 4.808547496795654,
+      "warp_error": 0.01683145947754383
+    },
+    {
+      "frame_idx": 1,
+      "mse": 0.01501455157995224,
+      "psnr": 18.234876337787135,
+      "lpips": 0.27699312567710876,
+      "flow_magnitude": 3.927031993865967,
+      "warp_error": 0.0176666509360075
+    },
+    {
+      "frame_idx": 2,
+      "mse": 0.015488860197365284,
+      "psnr": 18.09980540162537,
+      "lpips": 0.35056939721107483,
+      "flow_magnitude": 3.485747814178467,
+      "warp_error": 0.017422350123524666
+    },
+    {
+      "frame_idx": 3,
+      "mse": 0.019851308315992355,
+      "psnr": 17.022108654403116,
+      "lpips": 0.4044386148452759,
+      "flow_magnitude": 4.044375419616699,
+      "warp_error": 0.02115745283663273
+    },
+    {
+      "frame_idx": 4,
+      "mse": 0.02090734802186489,
+      "psnr": 16.797010514727592,
+      "lpips": 0.39480793476104736,
+      "flow_magnitude": 4.018402099609375,
+      "warp_error": 0.022749267518520355
+    },
+    {
+      "frame_idx": 5,
+      "mse": 0.023413537070155144,
+      "psnr": 16.305329727188614,
+      "lpips": 0.4035030007362366,
+      "flow_magnitude": 5.308493614196777,
+      "warp_error": 0.026470070704817772
+    },
+    {
+      "frame_idx": 6,
+      "mse": 0.019602103158831596,
+      "psnr": 17.076973295989625,
+      "lpips": 0.3222370445728302,
+      "flow_magnitude": 4.299981594085693,
+      "warp_error": 0.022409269586205482
+    },
+    {
+      "frame_idx": 7,
+      "mse": 0.03206251189112663,
+      "psnr": 14.940024564758911,
+      "lpips": 0.45962581038475037,
+      "flow_magnitude": 4.212001323699951,
+      "warp_error": 0.03270472213625908
+    },
+    {
+      "frame_idx": 8,
+      "mse": 0.0312014352530241,
+      "psnr": 15.058254281568138,
+      "lpips": 0.4563046097755432,
+      "flow_magnitude": 4.810596942901611,
+      "warp_error": 0.03741185739636421
+    },
+    {
+      "frame_idx": 9,
+      "mse": 0.027214253321290016,
+      "psnr": 15.652035769409578,
+      "lpips": 0.385998010635376,
+      "flow_magnitude": 4.343583106994629,
+      "warp_error": 0.03053200989961624
+    },
+    {
+      "frame_idx": 10,
+      "mse": 0.016827400773763657,
+      "psnr": 17.73982961670575,
+      "lpips": 0.3551931381225586,
+      "flow_magnitude": 4.5732011795043945,
+      "warp_error": 0.017634538933634758
+    },
+    {
+      "frame_idx": 11,
+      "mse": 0.016718028113245964,
+      "psnr": 17.768149487892927,
+      "lpips": 0.37598684430122375,
+      "flow_magnitude": 4.048725605010986,
+      "warp_error": 0.02084394358098507
+    },
+    {
+      "frame_idx": 12,
+      "mse": 0.026896312832832336,
+      "psnr": 15.703072525667574,
+      "lpips": 0.37483537197113037,
+      "flow_magnitude": 4.258729457855225,
+      "warp_error": 0.02981388010084629
+    },
+    {
+      "frame_idx": 13,
+      "mse": 0.021544629707932472,
+      "psnr": 16.666609658217773,
+      "lpips": 0.3521016538143158,
+      "flow_magnitude": 3.8112967014312744,
+      "warp_error": 0.022888371720910072
+    },
+    {
+      "frame_idx": 14,
+      "mse": 0.025003651157021523,
+      "psnr": 16.019965688652768,
+      "lpips": 0.41219761967658997,
+      "flow_magnitude": 5.949771881103516,
+      "warp_error": 0.028844373300671577
+    }
+  ]
+}

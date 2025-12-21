@@ -1,0 +1,572 @@
+[
+  {
+    "config": {
+      "experiment_id": "birds_flying_baseline",
+      "video_name": "birds_flying",
+      "prompt": "birds flying across a blue sky, nature documentary, consistent shapes",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 25,
+      "hypothesis": "baseline"
+    },
+    "metrics": {
+      "mse_mean": 0.02192168552428484,
+      "mse_std": 0.005353118355007436,
+      "lpips_mean": 0.37664673924446107,
+      "lpips_std": 0.04741322806621158,
+      "flow_mean": 4.393365383148193,
+      "flow_variance": 0.3641391694545746
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "birds_flying_recommended",
+      "video_name": "birds_flying",
+      "prompt": "birds flying across a blue sky, nature documentary, smooth motion, consistent shapes",
+      "negative_prompt": "flickering, morphing birds, changing shapes, unstable, jittery feathers, bad quality, blurry, distorted",
+      "guidance_scale": 5.0,
+      "num_inference_steps": 35,
+      "hypothesis": "recommended"
+    },
+    "metrics": {
+      "mse_mean": 0.012385032357027132,
+      "mse_std": 0.004080652762503343,
+      "lpips_mean": 0.34635120232899985,
+      "lpips_std": 0.05225085641931295,
+      "flow_mean": 3.8800904750823975,
+      "flow_variance": 0.3013279139995575
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "birds_flying_low_cfg_only",
+      "video_name": "birds_flying",
+      "prompt": "birds flying across a blue sky, nature documentary, consistent shapes",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 5.0,
+      "num_inference_steps": 25,
+      "hypothesis": "cfg_only"
+    },
+    "metrics": {
+      "mse_mean": 0.015835848512748878,
+      "mse_std": 0.004688996942096268,
+      "lpips_mean": 0.3842481335004171,
+      "lpips_std": 0.060737037007836774,
+      "flow_mean": 4.35027551651001,
+      "flow_variance": 0.37462472915649414
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "birds_flying_more_steps_only",
+      "video_name": "birds_flying",
+      "prompt": "birds flying across a blue sky, nature documentary, consistent shapes",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 35,
+      "hypothesis": "steps_only"
+    },
+    "metrics": {
+      "mse_mean": 0.02298527111609777,
+      "mse_std": 0.006188796565226695,
+      "lpips_mean": 0.3853032986323039,
+      "lpips_std": 0.061477341129960714,
+      "flow_mean": 4.226522922515869,
+      "flow_variance": 0.9722889065742493
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "birds_flying_prompt_only",
+      "video_name": "birds_flying",
+      "prompt": "birds flying across a blue sky, nature documentary, smooth motion, consistent shapes",
+      "negative_prompt": "flickering, morphing birds, changing shapes, unstable, jittery feathers, bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 25,
+      "hypothesis": "prompt_only"
+    },
+    "metrics": {
+      "mse_mean": 0.012001980189234018,
+      "mse_std": 0.003963087996482931,
+      "lpips_mean": 0.33756135900815326,
+      "lpips_std": 0.050720024995471714,
+      "flow_mean": 3.772411584854126,
+      "flow_variance": 0.4867088198661804
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "corgi_beach_baseline",
+      "video_name": "corgi_beach",
+      "prompt": "a corgi walking on the beach, sunset lighting, high quality",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 25,
+      "hypothesis": "baseline"
+    },
+    "metrics": {
+      "mse_mean": 0.020591712246338528,
+      "mse_std": 0.0045231975667960975,
+      "lpips_mean": 0.29827332496643066,
+      "lpips_std": 0.02664860114493737,
+      "flow_mean": 5.8749518394470215,
+      "flow_variance": 1.5428900718688965
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "corgi_beach_recommended",
+      "video_name": "corgi_beach",
+      "prompt": "a corgi walking on the beach, sunset lighting, steady camera, smooth motion, high quality",
+      "negative_prompt": "flickering water, unstable waves, jittery, morphing, handheld camera, shaky, bad quality, blurry, distorted",
+      "guidance_scale": 5.5,
+      "num_inference_steps": 30,
+      "hypothesis": "recommended"
+    },
+    "metrics": {
+      "mse_mean": 0.01348109133541584,
+      "mse_std": 0.004350380940140994,
+      "lpips_mean": 0.2872829705476761,
+      "lpips_std": 0.0363608680926452,
+      "flow_mean": 4.448333740234375,
+      "flow_variance": 1.1620781421661377
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "corgi_beach_low_cfg_only",
+      "video_name": "corgi_beach",
+      "prompt": "a corgi walking on the beach, sunset lighting, high quality",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 5.5,
+      "num_inference_steps": 25,
+      "hypothesis": "cfg_only"
+    },
+    "metrics": {
+      "mse_mean": 0.017823336459696294,
+      "mse_std": 0.005251153345220543,
+      "lpips_mean": 0.3350926478703817,
+      "lpips_std": 0.030176542923343035,
+      "flow_mean": 7.405211448669434,
+      "flow_variance": 3.4200737476348877
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "corgi_beach_more_steps_only",
+      "video_name": "corgi_beach",
+      "prompt": "a corgi walking on the beach, sunset lighting, high quality",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 30,
+      "hypothesis": "steps_only"
+    },
+    "metrics": {
+      "mse_mean": 0.020180436285833516,
+      "mse_std": 0.004261810014404944,
+      "lpips_mean": 0.2904668629169464,
+      "lpips_std": 0.023090888508461506,
+      "flow_mean": 5.654445171356201,
+      "flow_variance": 2.1173017024993896
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "corgi_beach_prompt_only",
+      "video_name": "corgi_beach",
+      "prompt": "a corgi walking on the beach, sunset lighting, steady camera, smooth motion, high quality",
+      "negative_prompt": "flickering water, unstable waves, jittery, morphing, handheld camera, shaky, bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 25,
+      "hypothesis": "prompt_only"
+    },
+    "metrics": {
+      "mse_mean": 0.014632798669238885,
+      "mse_std": 0.003824974937894047,
+      "lpips_mean": 0.2787923405567805,
+      "lpips_std": 0.03736695696330949,
+      "flow_mean": 4.3295369148254395,
+      "flow_variance": 1.5072251558303833
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "mig21_missile_baseline",
+      "video_name": "mig21_missile",
+      "prompt": "MiG-21 fighter jet firing missile, smooth motion blur, cinematic, steady shot",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 25,
+      "hypothesis": "baseline"
+    },
+    "metrics": {
+      "mse_mean": 0.017922048394878706,
+      "mse_std": 0.004443105940159359,
+      "lpips_mean": 0.33447183966636657,
+      "lpips_std": 0.028290092071216216,
+      "flow_mean": 9.520398139953613,
+      "flow_variance": 1.5990761518478394
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "mig21_missile_recommended",
+      "video_name": "mig21_missile",
+      "prompt": "MiG-21 fighter jet firing missile, smooth motion blur, cinematic, steady shot",
+      "negative_prompt": "flickering, jittery, teleporting, inconsistent trail, morphing, bad quality, blurry, distorted",
+      "guidance_scale": 6.0,
+      "num_inference_steps": 40,
+      "hypothesis": "recommended"
+    },
+    "metrics": {
+      "mse_mean": 0.02010614238679409,
+      "mse_std": 0.004155126553907793,
+      "lpips_mean": 0.31044067641099293,
+      "lpips_std": 0.04609536977684229,
+      "flow_mean": 10.243000030517578,
+      "flow_variance": 3.178093194961548
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "mig21_missile_low_cfg_only",
+      "video_name": "mig21_missile",
+      "prompt": "MiG-21 fighter jet firing missile, smooth motion blur, cinematic, steady shot",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 6.0,
+      "num_inference_steps": 25,
+      "hypothesis": "cfg_only"
+    },
+    "metrics": {
+      "mse_mean": 0.01843012621005376,
+      "mse_std": 0.004053247958565255,
+      "lpips_mean": 0.3410216530164083,
+      "lpips_std": 0.043228793597537306,
+      "flow_mean": 10.293932914733887,
+      "flow_variance": 1.8517225980758667
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "mig21_missile_more_steps_only",
+      "video_name": "mig21_missile",
+      "prompt": "MiG-21 fighter jet firing missile, smooth motion blur, cinematic, steady shot",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 40,
+      "hypothesis": "steps_only"
+    },
+    "metrics": {
+      "mse_mean": 0.022120312601327897,
+      "mse_std": 0.004049620804875617,
+      "lpips_mean": 0.3508236567179362,
+      "lpips_std": 0.028745328439290934,
+      "flow_mean": 11.64199161529541,
+      "flow_variance": 2.0654406547546387
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "mig21_missile_prompt_only",
+      "video_name": "mig21_missile",
+      "prompt": "MiG-21 fighter jet firing missile, smooth motion blur, cinematic, steady shot",
+      "negative_prompt": "flickering, jittery, teleporting, inconsistent trail, morphing, bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 25,
+      "hypothesis": "prompt_only"
+    },
+    "metrics": {
+      "mse_mean": 0.016381845436990262,
+      "mse_std": 0.004094187221176833,
+      "lpips_mean": 0.26260154843330386,
+      "lpips_std": 0.03486520943185813,
+      "flow_mean": 8.181008338928223,
+      "flow_variance": 3.107389211654663
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "woman_waving_baseline",
+      "video_name": "woman_waving",
+      "prompt": "a woman waving her hand, portrait, studio lighting, smooth natural motion",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 25,
+      "hypothesis": "baseline"
+    },
+    "metrics": {
+      "mse_mean": 0.02199483774602413,
+      "mse_std": 0.007751956671581742,
+      "lpips_mean": 0.2967531939347585,
+      "lpips_std": 0.09697323131624955,
+      "flow_mean": 4.408576011657715,
+      "flow_variance": 1.376939296722412
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "woman_waving_recommended",
+      "video_name": "woman_waving",
+      "prompt": "a woman waving her hand, portrait, studio lighting, smooth natural motion",
+      "negative_prompt": "flickering hands, morphing fingers, jittery, distorted hands, bad quality, blurry, deformed",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 30,
+      "hypothesis": "recommended"
+    },
+    "metrics": {
+      "mse_mean": 0.009608406014740467,
+      "mse_std": 0.00397387551538975,
+      "lpips_mean": 0.16412235746781031,
+      "lpips_std": 0.05909633560149938,
+      "flow_mean": 2.3188982009887695,
+      "flow_variance": 1.4261020421981812
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "woman_waving_low_cfg_only",
+      "video_name": "woman_waving",
+      "prompt": "a woman waving her hand, portrait, studio lighting, smooth natural motion",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 25,
+      "hypothesis": "cfg_only"
+    },
+    "metrics": {
+      "mse_mean": 0.016848004454125962,
+      "mse_std": 0.006437340978518338,
+      "lpips_mean": 0.28071098725001015,
+      "lpips_std": 0.10174182756652551,
+      "flow_mean": 4.106181621551514,
+      "flow_variance": 0.9069399237632751
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "woman_waving_more_steps_only",
+      "video_name": "woman_waving",
+      "prompt": "a woman waving her hand, portrait, studio lighting, smooth natural motion",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 30,
+      "hypothesis": "steps_only"
+    },
+    "metrics": {
+      "mse_mean": 0.021073565414796273,
+      "mse_std": 0.006739734113804393,
+      "lpips_mean": 0.28940279434124627,
+      "lpips_std": 0.0893645348990822,
+      "flow_mean": 4.80053186416626,
+      "flow_variance": 1.4941825866699219
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "woman_waving_prompt_only",
+      "video_name": "woman_waving",
+      "prompt": "a woman waving her hand, portrait, studio lighting, smooth natural motion",
+      "negative_prompt": "flickering hands, morphing fingers, jittery, distorted hands, bad quality, blurry, deformed",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 25,
+      "hypothesis": "prompt_only"
+    },
+    "metrics": {
+      "mse_mean": 0.008689600415527821,
+      "mse_std": 0.0033674363313511983,
+      "lpips_mean": 0.1554233322540919,
+      "lpips_std": 0.03869132202955621,
+      "flow_mean": 2.2735321521759033,
+      "flow_variance": 0.68609619140625
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "portrait_baseline",
+      "video_name": "portrait",
+      "prompt": "portrait of a man with glasses, professional photo, static pose, consistent lighting",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 25,
+      "hypothesis": "baseline"
+    },
+    "metrics": {
+      "mse_mean": 0.00859029070318987,
+      "mse_std": 0.006581327470344953,
+      "lpips_mean": 0.13227935942510763,
+      "lpips_std": 0.07076648305727773,
+      "flow_mean": 1.9361634254455566,
+      "flow_variance": 3.675717830657959
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "portrait_recommended",
+      "video_name": "portrait",
+      "prompt": "portrait of a man with glasses, professional photo, static pose, consistent lighting",
+      "negative_prompt": "flickering, changing expression, morphing face, unstable features, bad quality, blurry, distorted",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 35,
+      "hypothesis": "recommended"
+    },
+    "metrics": {
+      "mse_mean": 0.007110491441562772,
+      "mse_std": 0.004680047121118204,
+      "lpips_mean": 0.09348210121194521,
+      "lpips_std": 0.03141615882647141,
+      "flow_mean": 1.0087099075317383,
+      "flow_variance": 0.14878441393375397
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "portrait_low_cfg_only",
+      "video_name": "portrait",
+      "prompt": "portrait of a man with glasses, professional photo, static pose, consistent lighting",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 25,
+      "hypothesis": "cfg_only"
+    },
+    "metrics": {
+      "mse_mean": 0.010070868907496333,
+      "mse_std": 0.0073106581053297565,
+      "lpips_mean": 0.1483138548831145,
+      "lpips_std": 0.07195519294290355,
+      "flow_mean": 2.4488022327423096,
+      "flow_variance": 3.861827850341797
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "portrait_more_steps_only",
+      "video_name": "portrait",
+      "prompt": "portrait of a man with glasses, professional photo, static pose, consistent lighting",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 35,
+      "hypothesis": "steps_only"
+    },
+    "metrics": {
+      "mse_mean": 0.009758062443385522,
+      "mse_std": 0.004173671194954191,
+      "lpips_mean": 0.14814475526412327,
+      "lpips_std": 0.032311614665913764,
+      "flow_mean": 2.091221332550049,
+      "flow_variance": 0.5024357438087463
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "portrait_prompt_only",
+      "video_name": "portrait",
+      "prompt": "portrait of a man with glasses, professional photo, static pose, consistent lighting",
+      "negative_prompt": "flickering, changing expression, morphing face, unstable features, bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 25,
+      "hypothesis": "prompt_only"
+    },
+    "metrics": {
+      "mse_mean": 0.008150402984271447,
+      "mse_std": 0.003905209182979524,
+      "lpips_mean": 0.13581541726986568,
+      "lpips_std": 0.04241518480507153,
+      "flow_mean": 2.4015893936157227,
+      "flow_variance": 0.9807424545288086
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "landscape_baseline",
+      "video_name": "landscape",
+      "prompt": "a beautiful mountain landscape, lake reflection, golden hour, still water, serene",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 25,
+      "hypothesis": "baseline"
+    },
+    "metrics": {
+      "mse_mean": 0.008141539199277759,
+      "mse_std": 0.004755784112909939,
+      "lpips_mean": 0.10172263979911804,
+      "lpips_std": 0.031823488908389104,
+      "flow_mean": 0.38953113555908203,
+      "flow_variance": 0.0016126837581396103
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "landscape_recommended",
+      "video_name": "landscape",
+      "prompt": "a beautiful mountain landscape, lake reflection, golden hour, still water, serene",
+      "negative_prompt": "flickering water, rippling, moving clouds, windy, bad quality, blurry, distorted",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 25,
+      "hypothesis": "recommended"
+    },
+    "metrics": {
+      "mse_mean": 0.00783098852261901,
+      "mse_std": 0.004347788829624673,
+      "lpips_mean": 0.09396380533774694,
+      "lpips_std": 0.03786075961389747,
+      "flow_mean": 0.23547016084194183,
+      "flow_variance": 0.0014102397253736854
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "landscape_low_cfg_only",
+      "video_name": "landscape",
+      "prompt": "a beautiful mountain landscape, lake reflection, golden hour, still water, serene",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 25,
+      "hypothesis": "cfg_only"
+    },
+    "metrics": {
+      "mse_mean": 0.00838468843139708,
+      "mse_std": 0.004793697887843118,
+      "lpips_mean": 0.10818667411804199,
+      "lpips_std": 0.03421394370364065,
+      "flow_mean": 0.41772526502609253,
+      "flow_variance": 0.0021391066256910563
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "landscape_more_steps_only",
+      "video_name": "landscape",
+      "prompt": "a beautiful mountain landscape, lake reflection, golden hour, still water, serene",
+      "negative_prompt": "bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 25,
+      "hypothesis": "steps_only"
+    },
+    "metrics": {
+      "mse_mean": 0.008141539199277759,
+      "mse_std": 0.004755784112909939,
+      "lpips_mean": 0.10172263979911804,
+      "lpips_std": 0.031823488908389104,
+      "flow_mean": 0.38953113555908203,
+      "flow_variance": 0.0016126837581396103
+    }
+  },
+  {
+    "config": {
+      "experiment_id": "landscape_prompt_only",
+      "video_name": "landscape",
+      "prompt": "a beautiful mountain landscape, lake reflection, golden hour, still water, serene",
+      "negative_prompt": "flickering water, rippling, moving clouds, windy, bad quality, blurry, distorted",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 25,
+      "hypothesis": "prompt_only"
+    },
+    "metrics": {
+      "mse_mean": 0.007533051570256551,
+      "mse_std": 0.004191637284159585,
+      "lpips_mean": 0.08909770250320434,
+      "lpips_std": 0.036447053352704165,
+      "flow_mean": 0.22753947973251343,
+      "flow_variance": 0.001329639577306807
+    }
+  }
+]

@@ -1,0 +1,3407 @@
+AnimateDiff UNet Forward Pass Trace
+================================================================================
+
+Total modules traced: 170
+
+EXECUTION ORDER:
+--------------------------------------------------------------------------------
+   0. [ResnetBlock2D] down_blocks.0.resnets.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+   1. [Attention] down_blocks.0.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+   2. [Attention] down_blocks.0.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+   3. [BasicTransformerBlock] down_blocks.0.attentions.0.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+   4. [Transformer2DModel] down_blocks.0.attentions.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+   5. [Attention] down_blocks.0.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+   6. [Attention] down_blocks.0.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+   7. [BasicTransformerBlock] down_blocks.0.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+   8. [AnimateDiffTransformer3D] down_blocks.0.motion_modules.0
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+   9. [ResnetBlock2D] down_blocks.0.resnets.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+  10. [Attention] down_blocks.0.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+  11. [Attention] down_blocks.0.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+  12. [BasicTransformerBlock] down_blocks.0.attentions.1.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+  13. [Transformer2DModel] down_blocks.0.attentions.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+  14. [Attention] down_blocks.0.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+  15. [Attention] down_blocks.0.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+  16. [BasicTransformerBlock] down_blocks.0.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+  17. [AnimateDiffTransformer3D] down_blocks.0.motion_modules.1
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+  18. [ResnetBlock2D] down_blocks.1.resnets.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+  19. [Attention] down_blocks.1.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+  20. [Attention] down_blocks.1.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+  21. [BasicTransformerBlock] down_blocks.1.attentions.0.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+  22. [Transformer2DModel] down_blocks.1.attentions.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+  23. [Attention] down_blocks.1.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+  24. [Attention] down_blocks.1.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+  25. [BasicTransformerBlock] down_blocks.1.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+  26. [AnimateDiffTransformer3D] down_blocks.1.motion_modules.0
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+  27. [ResnetBlock2D] down_blocks.1.resnets.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+  28. [Attention] down_blocks.1.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+  29. [Attention] down_blocks.1.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+  30. [BasicTransformerBlock] down_blocks.1.attentions.1.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+  31. [Transformer2DModel] down_blocks.1.attentions.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+  32. [Attention] down_blocks.1.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+  33. [Attention] down_blocks.1.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+  34. [BasicTransformerBlock] down_blocks.1.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+  35. [AnimateDiffTransformer3D] down_blocks.1.motion_modules.1
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+  36. [ResnetBlock2D] down_blocks.2.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+  37. [Attention] down_blocks.2.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+  38. [Attention] down_blocks.2.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+  39. [BasicTransformerBlock] down_blocks.2.attentions.0.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+  40. [Transformer2DModel] down_blocks.2.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+  41. [Attention] down_blocks.2.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+  42. [Attention] down_blocks.2.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+  43. [BasicTransformerBlock] down_blocks.2.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+  44. [AnimateDiffTransformer3D] down_blocks.2.motion_modules.0
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+  45. [ResnetBlock2D] down_blocks.2.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+  46. [Attention] down_blocks.2.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+  47. [Attention] down_blocks.2.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+  48. [BasicTransformerBlock] down_blocks.2.attentions.1.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+  49. [Transformer2DModel] down_blocks.2.attentions.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+  50. [Attention] down_blocks.2.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+  51. [Attention] down_blocks.2.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+  52. [BasicTransformerBlock] down_blocks.2.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+  53. [AnimateDiffTransformer3D] down_blocks.2.motion_modules.1
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+  54. [ResnetBlock2D] down_blocks.3.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+  55. [Attention] down_blocks.3.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  56. [Attention] down_blocks.3.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  57. [BasicTransformerBlock] down_blocks.3.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+  58. [AnimateDiffTransformer3D] down_blocks.3.motion_modules.0
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+  59. [ResnetBlock2D] down_blocks.3.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+  60. [Attention] down_blocks.3.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  61. [Attention] down_blocks.3.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  62. [BasicTransformerBlock] down_blocks.3.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+  63. [AnimateDiffTransformer3D] down_blocks.3.motion_modules.1
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+  64. [ResnetBlock2D] mid_block.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+  65. [Attention] mid_block.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  66. [Attention] mid_block.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  67. [BasicTransformerBlock] mid_block.attentions.0.transformer_blocks.0
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  68. [Transformer2DModel] mid_block.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+  69. [Attention] mid_block.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  70. [Attention] mid_block.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  71. [BasicTransformerBlock] mid_block.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+  72. [AnimateDiffTransformer3D] mid_block.motion_modules.0
+       Input:  [(32, 1280, 4, 4), (), (), (), ()]
+       Output: [(32, 1280, 4, 4)]
+
+  73. [ResnetBlock2D] mid_block.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+  74. [ResnetBlock2D] up_blocks.0.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+  75. [Attention] up_blocks.0.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  76. [Attention] up_blocks.0.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  77. [BasicTransformerBlock] up_blocks.0.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+  78. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.0
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+  79. [ResnetBlock2D] up_blocks.0.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+  80. [Attention] up_blocks.0.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  81. [Attention] up_blocks.0.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  82. [BasicTransformerBlock] up_blocks.0.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+  83. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.1
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+  84. [ResnetBlock2D] up_blocks.0.resnets.2
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+  85. [Attention] up_blocks.0.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  86. [Attention] up_blocks.0.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+  87. [BasicTransformerBlock] up_blocks.0.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+  88. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.2
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+  89. [ResnetBlock2D] up_blocks.1.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+  90. [Attention] up_blocks.1.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+  91. [Attention] up_blocks.1.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+  92. [BasicTransformerBlock] up_blocks.1.attentions.0.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+  93. [Transformer2DModel] up_blocks.1.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+  94. [Attention] up_blocks.1.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+  95. [Attention] up_blocks.1.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+  96. [BasicTransformerBlock] up_blocks.1.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+  97. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.0
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+  98. [ResnetBlock2D] up_blocks.1.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+  99. [Attention] up_blocks.1.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 100. [Attention] up_blocks.1.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 101. [BasicTransformerBlock] up_blocks.1.attentions.1.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 102. [Transformer2DModel] up_blocks.1.attentions.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 103. [Attention] up_blocks.1.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 104. [Attention] up_blocks.1.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 105. [BasicTransformerBlock] up_blocks.1.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 106. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.1
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 107. [ResnetBlock2D] up_blocks.1.resnets.2
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 108. [Attention] up_blocks.1.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 109. [Attention] up_blocks.1.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 110. [BasicTransformerBlock] up_blocks.1.attentions.2.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 111. [Transformer2DModel] up_blocks.1.attentions.2
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 112. [Attention] up_blocks.1.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 113. [Attention] up_blocks.1.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 114. [BasicTransformerBlock] up_blocks.1.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 115. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.2
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 116. [ResnetBlock2D] up_blocks.2.resnets.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 117. [Attention] up_blocks.2.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 118. [Attention] up_blocks.2.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 119. [BasicTransformerBlock] up_blocks.2.attentions.0.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 120. [Transformer2DModel] up_blocks.2.attentions.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 121. [Attention] up_blocks.2.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 122. [Attention] up_blocks.2.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 123. [BasicTransformerBlock] up_blocks.2.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 124. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.0
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 125. [ResnetBlock2D] up_blocks.2.resnets.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 126. [Attention] up_blocks.2.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 127. [Attention] up_blocks.2.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 128. [BasicTransformerBlock] up_blocks.2.attentions.1.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 129. [Transformer2DModel] up_blocks.2.attentions.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 130. [Attention] up_blocks.2.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 131. [Attention] up_blocks.2.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 132. [BasicTransformerBlock] up_blocks.2.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 133. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.1
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 134. [ResnetBlock2D] up_blocks.2.resnets.2
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 135. [Attention] up_blocks.2.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 136. [Attention] up_blocks.2.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 137. [BasicTransformerBlock] up_blocks.2.attentions.2.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 138. [Transformer2DModel] up_blocks.2.attentions.2
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 139. [Attention] up_blocks.2.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 140. [Attention] up_blocks.2.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 141. [BasicTransformerBlock] up_blocks.2.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 142. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.2
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 143. [ResnetBlock2D] up_blocks.3.resnets.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 144. [Attention] up_blocks.3.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 145. [Attention] up_blocks.3.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 146. [BasicTransformerBlock] up_blocks.3.attentions.0.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 147. [Transformer2DModel] up_blocks.3.attentions.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 148. [Attention] up_blocks.3.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 149. [Attention] up_blocks.3.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 150. [BasicTransformerBlock] up_blocks.3.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 151. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.0
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 152. [ResnetBlock2D] up_blocks.3.resnets.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 153. [Attention] up_blocks.3.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 154. [Attention] up_blocks.3.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 155. [BasicTransformerBlock] up_blocks.3.attentions.1.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 156. [Transformer2DModel] up_blocks.3.attentions.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 157. [Attention] up_blocks.3.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 158. [Attention] up_blocks.3.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 159. [BasicTransformerBlock] up_blocks.3.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 160. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.1
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 161. [ResnetBlock2D] up_blocks.3.resnets.2
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 162. [Attention] up_blocks.3.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 163. [Attention] up_blocks.3.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 164. [BasicTransformerBlock] up_blocks.3.attentions.2.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 165. [Transformer2DModel] up_blocks.3.attentions.2
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 166. [Attention] up_blocks.3.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 167. [Attention] up_blocks.3.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 168. [BasicTransformerBlock] up_blocks.3.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 169. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.2
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 170. [ResnetBlock2D] down_blocks.0.resnets.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 171. [Attention] down_blocks.0.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 172. [Attention] down_blocks.0.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 173. [BasicTransformerBlock] down_blocks.0.attentions.0.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 174. [Transformer2DModel] down_blocks.0.attentions.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 175. [Attention] down_blocks.0.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 176. [Attention] down_blocks.0.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 177. [BasicTransformerBlock] down_blocks.0.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 178. [AnimateDiffTransformer3D] down_blocks.0.motion_modules.0
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 179. [ResnetBlock2D] down_blocks.0.resnets.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 180. [Attention] down_blocks.0.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 181. [Attention] down_blocks.0.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 182. [BasicTransformerBlock] down_blocks.0.attentions.1.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 183. [Transformer2DModel] down_blocks.0.attentions.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 184. [Attention] down_blocks.0.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 185. [Attention] down_blocks.0.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 186. [BasicTransformerBlock] down_blocks.0.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 187. [AnimateDiffTransformer3D] down_blocks.0.motion_modules.1
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 188. [ResnetBlock2D] down_blocks.1.resnets.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 189. [Attention] down_blocks.1.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 190. [Attention] down_blocks.1.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 191. [BasicTransformerBlock] down_blocks.1.attentions.0.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 192. [Transformer2DModel] down_blocks.1.attentions.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 193. [Attention] down_blocks.1.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 194. [Attention] down_blocks.1.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 195. [BasicTransformerBlock] down_blocks.1.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 196. [AnimateDiffTransformer3D] down_blocks.1.motion_modules.0
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 197. [ResnetBlock2D] down_blocks.1.resnets.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 198. [Attention] down_blocks.1.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 199. [Attention] down_blocks.1.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 200. [BasicTransformerBlock] down_blocks.1.attentions.1.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 201. [Transformer2DModel] down_blocks.1.attentions.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 202. [Attention] down_blocks.1.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 203. [Attention] down_blocks.1.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 204. [BasicTransformerBlock] down_blocks.1.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 205. [AnimateDiffTransformer3D] down_blocks.1.motion_modules.1
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 206. [ResnetBlock2D] down_blocks.2.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 207. [Attention] down_blocks.2.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 208. [Attention] down_blocks.2.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 209. [BasicTransformerBlock] down_blocks.2.attentions.0.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 210. [Transformer2DModel] down_blocks.2.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 211. [Attention] down_blocks.2.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 212. [Attention] down_blocks.2.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 213. [BasicTransformerBlock] down_blocks.2.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 214. [AnimateDiffTransformer3D] down_blocks.2.motion_modules.0
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 215. [ResnetBlock2D] down_blocks.2.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 216. [Attention] down_blocks.2.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 217. [Attention] down_blocks.2.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 218. [BasicTransformerBlock] down_blocks.2.attentions.1.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 219. [Transformer2DModel] down_blocks.2.attentions.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 220. [Attention] down_blocks.2.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 221. [Attention] down_blocks.2.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 222. [BasicTransformerBlock] down_blocks.2.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 223. [AnimateDiffTransformer3D] down_blocks.2.motion_modules.1
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 224. [ResnetBlock2D] down_blocks.3.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 225. [Attention] down_blocks.3.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 226. [Attention] down_blocks.3.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 227. [BasicTransformerBlock] down_blocks.3.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 228. [AnimateDiffTransformer3D] down_blocks.3.motion_modules.0
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 229. [ResnetBlock2D] down_blocks.3.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 230. [Attention] down_blocks.3.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 231. [Attention] down_blocks.3.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 232. [BasicTransformerBlock] down_blocks.3.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 233. [AnimateDiffTransformer3D] down_blocks.3.motion_modules.1
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 234. [ResnetBlock2D] mid_block.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 235. [Attention] mid_block.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 236. [Attention] mid_block.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 237. [BasicTransformerBlock] mid_block.attentions.0.transformer_blocks.0
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 238. [Transformer2DModel] mid_block.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 239. [Attention] mid_block.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 240. [Attention] mid_block.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 241. [BasicTransformerBlock] mid_block.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 242. [AnimateDiffTransformer3D] mid_block.motion_modules.0
+       Input:  [(32, 1280, 4, 4), (), (), (), ()]
+       Output: [(32, 1280, 4, 4)]
+
+ 243. [ResnetBlock2D] mid_block.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 244. [ResnetBlock2D] up_blocks.0.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 245. [Attention] up_blocks.0.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 246. [Attention] up_blocks.0.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 247. [BasicTransformerBlock] up_blocks.0.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 248. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.0
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 249. [ResnetBlock2D] up_blocks.0.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 250. [Attention] up_blocks.0.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 251. [Attention] up_blocks.0.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 252. [BasicTransformerBlock] up_blocks.0.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 253. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.1
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 254. [ResnetBlock2D] up_blocks.0.resnets.2
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 255. [Attention] up_blocks.0.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 256. [Attention] up_blocks.0.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 257. [BasicTransformerBlock] up_blocks.0.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 258. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.2
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 259. [ResnetBlock2D] up_blocks.1.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 260. [Attention] up_blocks.1.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 261. [Attention] up_blocks.1.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 262. [BasicTransformerBlock] up_blocks.1.attentions.0.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 263. [Transformer2DModel] up_blocks.1.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 264. [Attention] up_blocks.1.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 265. [Attention] up_blocks.1.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 266. [BasicTransformerBlock] up_blocks.1.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 267. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.0
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 268. [ResnetBlock2D] up_blocks.1.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 269. [Attention] up_blocks.1.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 270. [Attention] up_blocks.1.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 271. [BasicTransformerBlock] up_blocks.1.attentions.1.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 272. [Transformer2DModel] up_blocks.1.attentions.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 273. [Attention] up_blocks.1.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 274. [Attention] up_blocks.1.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 275. [BasicTransformerBlock] up_blocks.1.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 276. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.1
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 277. [ResnetBlock2D] up_blocks.1.resnets.2
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 278. [Attention] up_blocks.1.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 279. [Attention] up_blocks.1.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 280. [BasicTransformerBlock] up_blocks.1.attentions.2.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 281. [Transformer2DModel] up_blocks.1.attentions.2
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 282. [Attention] up_blocks.1.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 283. [Attention] up_blocks.1.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 284. [BasicTransformerBlock] up_blocks.1.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 285. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.2
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 286. [ResnetBlock2D] up_blocks.2.resnets.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 287. [Attention] up_blocks.2.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 288. [Attention] up_blocks.2.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 289. [BasicTransformerBlock] up_blocks.2.attentions.0.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 290. [Transformer2DModel] up_blocks.2.attentions.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 291. [Attention] up_blocks.2.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 292. [Attention] up_blocks.2.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 293. [BasicTransformerBlock] up_blocks.2.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 294. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.0
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 295. [ResnetBlock2D] up_blocks.2.resnets.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 296. [Attention] up_blocks.2.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 297. [Attention] up_blocks.2.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 298. [BasicTransformerBlock] up_blocks.2.attentions.1.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 299. [Transformer2DModel] up_blocks.2.attentions.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 300. [Attention] up_blocks.2.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 301. [Attention] up_blocks.2.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 302. [BasicTransformerBlock] up_blocks.2.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 303. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.1
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 304. [ResnetBlock2D] up_blocks.2.resnets.2
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 305. [Attention] up_blocks.2.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 306. [Attention] up_blocks.2.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 307. [BasicTransformerBlock] up_blocks.2.attentions.2.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 308. [Transformer2DModel] up_blocks.2.attentions.2
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 309. [Attention] up_blocks.2.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 310. [Attention] up_blocks.2.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 311. [BasicTransformerBlock] up_blocks.2.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 312. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.2
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 313. [ResnetBlock2D] up_blocks.3.resnets.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 314. [Attention] up_blocks.3.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 315. [Attention] up_blocks.3.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 316. [BasicTransformerBlock] up_blocks.3.attentions.0.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 317. [Transformer2DModel] up_blocks.3.attentions.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 318. [Attention] up_blocks.3.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 319. [Attention] up_blocks.3.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 320. [BasicTransformerBlock] up_blocks.3.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 321. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.0
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 322. [ResnetBlock2D] up_blocks.3.resnets.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 323. [Attention] up_blocks.3.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 324. [Attention] up_blocks.3.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 325. [BasicTransformerBlock] up_blocks.3.attentions.1.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 326. [Transformer2DModel] up_blocks.3.attentions.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 327. [Attention] up_blocks.3.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 328. [Attention] up_blocks.3.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 329. [BasicTransformerBlock] up_blocks.3.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 330. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.1
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 331. [ResnetBlock2D] up_blocks.3.resnets.2
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 332. [Attention] up_blocks.3.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 333. [Attention] up_blocks.3.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 334. [BasicTransformerBlock] up_blocks.3.attentions.2.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 335. [Transformer2DModel] up_blocks.3.attentions.2
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 336. [Attention] up_blocks.3.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 337. [Attention] up_blocks.3.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 338. [BasicTransformerBlock] up_blocks.3.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 339. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.2
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 340. [ResnetBlock2D] down_blocks.0.resnets.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 341. [Attention] down_blocks.0.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 342. [Attention] down_blocks.0.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 343. [BasicTransformerBlock] down_blocks.0.attentions.0.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 344. [Transformer2DModel] down_blocks.0.attentions.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 345. [Attention] down_blocks.0.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 346. [Attention] down_blocks.0.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 347. [BasicTransformerBlock] down_blocks.0.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 348. [AnimateDiffTransformer3D] down_blocks.0.motion_modules.0
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 349. [ResnetBlock2D] down_blocks.0.resnets.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 350. [Attention] down_blocks.0.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 351. [Attention] down_blocks.0.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 352. [BasicTransformerBlock] down_blocks.0.attentions.1.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 353. [Transformer2DModel] down_blocks.0.attentions.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 354. [Attention] down_blocks.0.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 355. [Attention] down_blocks.0.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 356. [BasicTransformerBlock] down_blocks.0.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 357. [AnimateDiffTransformer3D] down_blocks.0.motion_modules.1
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 358. [ResnetBlock2D] down_blocks.1.resnets.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 359. [Attention] down_blocks.1.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 360. [Attention] down_blocks.1.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 361. [BasicTransformerBlock] down_blocks.1.attentions.0.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 362. [Transformer2DModel] down_blocks.1.attentions.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 363. [Attention] down_blocks.1.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 364. [Attention] down_blocks.1.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 365. [BasicTransformerBlock] down_blocks.1.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 366. [AnimateDiffTransformer3D] down_blocks.1.motion_modules.0
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 367. [ResnetBlock2D] down_blocks.1.resnets.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 368. [Attention] down_blocks.1.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 369. [Attention] down_blocks.1.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 370. [BasicTransformerBlock] down_blocks.1.attentions.1.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 371. [Transformer2DModel] down_blocks.1.attentions.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 372. [Attention] down_blocks.1.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 373. [Attention] down_blocks.1.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 374. [BasicTransformerBlock] down_blocks.1.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 375. [AnimateDiffTransformer3D] down_blocks.1.motion_modules.1
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 376. [ResnetBlock2D] down_blocks.2.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 377. [Attention] down_blocks.2.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 378. [Attention] down_blocks.2.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 379. [BasicTransformerBlock] down_blocks.2.attentions.0.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 380. [Transformer2DModel] down_blocks.2.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 381. [Attention] down_blocks.2.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 382. [Attention] down_blocks.2.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 383. [BasicTransformerBlock] down_blocks.2.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 384. [AnimateDiffTransformer3D] down_blocks.2.motion_modules.0
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 385. [ResnetBlock2D] down_blocks.2.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 386. [Attention] down_blocks.2.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 387. [Attention] down_blocks.2.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 388. [BasicTransformerBlock] down_blocks.2.attentions.1.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 389. [Transformer2DModel] down_blocks.2.attentions.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 390. [Attention] down_blocks.2.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 391. [Attention] down_blocks.2.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 392. [BasicTransformerBlock] down_blocks.2.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 393. [AnimateDiffTransformer3D] down_blocks.2.motion_modules.1
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 394. [ResnetBlock2D] down_blocks.3.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 395. [Attention] down_blocks.3.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 396. [Attention] down_blocks.3.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 397. [BasicTransformerBlock] down_blocks.3.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 398. [AnimateDiffTransformer3D] down_blocks.3.motion_modules.0
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 399. [ResnetBlock2D] down_blocks.3.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 400. [Attention] down_blocks.3.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 401. [Attention] down_blocks.3.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 402. [BasicTransformerBlock] down_blocks.3.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 403. [AnimateDiffTransformer3D] down_blocks.3.motion_modules.1
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 404. [ResnetBlock2D] mid_block.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 405. [Attention] mid_block.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 406. [Attention] mid_block.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 407. [BasicTransformerBlock] mid_block.attentions.0.transformer_blocks.0
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 408. [Transformer2DModel] mid_block.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 409. [Attention] mid_block.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 410. [Attention] mid_block.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 411. [BasicTransformerBlock] mid_block.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 412. [AnimateDiffTransformer3D] mid_block.motion_modules.0
+       Input:  [(32, 1280, 4, 4), (), (), (), ()]
+       Output: [(32, 1280, 4, 4)]
+
+ 413. [ResnetBlock2D] mid_block.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 414. [ResnetBlock2D] up_blocks.0.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 415. [Attention] up_blocks.0.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 416. [Attention] up_blocks.0.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 417. [BasicTransformerBlock] up_blocks.0.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 418. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.0
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 419. [ResnetBlock2D] up_blocks.0.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 420. [Attention] up_blocks.0.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 421. [Attention] up_blocks.0.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 422. [BasicTransformerBlock] up_blocks.0.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 423. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.1
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 424. [ResnetBlock2D] up_blocks.0.resnets.2
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 425. [Attention] up_blocks.0.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 426. [Attention] up_blocks.0.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 427. [BasicTransformerBlock] up_blocks.0.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 428. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.2
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 429. [ResnetBlock2D] up_blocks.1.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 430. [Attention] up_blocks.1.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 431. [Attention] up_blocks.1.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 432. [BasicTransformerBlock] up_blocks.1.attentions.0.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 433. [Transformer2DModel] up_blocks.1.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 434. [Attention] up_blocks.1.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 435. [Attention] up_blocks.1.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 436. [BasicTransformerBlock] up_blocks.1.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 437. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.0
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 438. [ResnetBlock2D] up_blocks.1.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 439. [Attention] up_blocks.1.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 440. [Attention] up_blocks.1.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 441. [BasicTransformerBlock] up_blocks.1.attentions.1.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 442. [Transformer2DModel] up_blocks.1.attentions.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 443. [Attention] up_blocks.1.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 444. [Attention] up_blocks.1.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 445. [BasicTransformerBlock] up_blocks.1.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 446. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.1
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 447. [ResnetBlock2D] up_blocks.1.resnets.2
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 448. [Attention] up_blocks.1.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 449. [Attention] up_blocks.1.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 450. [BasicTransformerBlock] up_blocks.1.attentions.2.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 451. [Transformer2DModel] up_blocks.1.attentions.2
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 452. [Attention] up_blocks.1.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 453. [Attention] up_blocks.1.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 454. [BasicTransformerBlock] up_blocks.1.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 455. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.2
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 456. [ResnetBlock2D] up_blocks.2.resnets.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 457. [Attention] up_blocks.2.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 458. [Attention] up_blocks.2.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 459. [BasicTransformerBlock] up_blocks.2.attentions.0.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 460. [Transformer2DModel] up_blocks.2.attentions.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 461. [Attention] up_blocks.2.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 462. [Attention] up_blocks.2.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 463. [BasicTransformerBlock] up_blocks.2.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 464. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.0
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 465. [ResnetBlock2D] up_blocks.2.resnets.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 466. [Attention] up_blocks.2.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 467. [Attention] up_blocks.2.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 468. [BasicTransformerBlock] up_blocks.2.attentions.1.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 469. [Transformer2DModel] up_blocks.2.attentions.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 470. [Attention] up_blocks.2.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 471. [Attention] up_blocks.2.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 472. [BasicTransformerBlock] up_blocks.2.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 473. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.1
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 474. [ResnetBlock2D] up_blocks.2.resnets.2
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 475. [Attention] up_blocks.2.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 476. [Attention] up_blocks.2.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 477. [BasicTransformerBlock] up_blocks.2.attentions.2.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 478. [Transformer2DModel] up_blocks.2.attentions.2
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 479. [Attention] up_blocks.2.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 480. [Attention] up_blocks.2.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 481. [BasicTransformerBlock] up_blocks.2.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 482. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.2
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 483. [ResnetBlock2D] up_blocks.3.resnets.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 484. [Attention] up_blocks.3.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 485. [Attention] up_blocks.3.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 486. [BasicTransformerBlock] up_blocks.3.attentions.0.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 487. [Transformer2DModel] up_blocks.3.attentions.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 488. [Attention] up_blocks.3.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 489. [Attention] up_blocks.3.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 490. [BasicTransformerBlock] up_blocks.3.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 491. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.0
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 492. [ResnetBlock2D] up_blocks.3.resnets.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 493. [Attention] up_blocks.3.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 494. [Attention] up_blocks.3.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 495. [BasicTransformerBlock] up_blocks.3.attentions.1.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 496. [Transformer2DModel] up_blocks.3.attentions.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 497. [Attention] up_blocks.3.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 498. [Attention] up_blocks.3.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 499. [BasicTransformerBlock] up_blocks.3.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 500. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.1
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 501. [ResnetBlock2D] up_blocks.3.resnets.2
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 502. [Attention] up_blocks.3.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 503. [Attention] up_blocks.3.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 504. [BasicTransformerBlock] up_blocks.3.attentions.2.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 505. [Transformer2DModel] up_blocks.3.attentions.2
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 506. [Attention] up_blocks.3.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 507. [Attention] up_blocks.3.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 508. [BasicTransformerBlock] up_blocks.3.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 509. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.2
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 510. [ResnetBlock2D] down_blocks.0.resnets.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 511. [Attention] down_blocks.0.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 512. [Attention] down_blocks.0.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 513. [BasicTransformerBlock] down_blocks.0.attentions.0.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 514. [Transformer2DModel] down_blocks.0.attentions.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 515. [Attention] down_blocks.0.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 516. [Attention] down_blocks.0.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 517. [BasicTransformerBlock] down_blocks.0.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 518. [AnimateDiffTransformer3D] down_blocks.0.motion_modules.0
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 519. [ResnetBlock2D] down_blocks.0.resnets.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 520. [Attention] down_blocks.0.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 521. [Attention] down_blocks.0.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 522. [BasicTransformerBlock] down_blocks.0.attentions.1.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 523. [Transformer2DModel] down_blocks.0.attentions.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 524. [Attention] down_blocks.0.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 525. [Attention] down_blocks.0.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 526. [BasicTransformerBlock] down_blocks.0.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 527. [AnimateDiffTransformer3D] down_blocks.0.motion_modules.1
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 528. [ResnetBlock2D] down_blocks.1.resnets.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 529. [Attention] down_blocks.1.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 530. [Attention] down_blocks.1.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 531. [BasicTransformerBlock] down_blocks.1.attentions.0.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 532. [Transformer2DModel] down_blocks.1.attentions.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 533. [Attention] down_blocks.1.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 534. [Attention] down_blocks.1.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 535. [BasicTransformerBlock] down_blocks.1.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 536. [AnimateDiffTransformer3D] down_blocks.1.motion_modules.0
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 537. [ResnetBlock2D] down_blocks.1.resnets.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 538. [Attention] down_blocks.1.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 539. [Attention] down_blocks.1.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 540. [BasicTransformerBlock] down_blocks.1.attentions.1.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 541. [Transformer2DModel] down_blocks.1.attentions.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 542. [Attention] down_blocks.1.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 543. [Attention] down_blocks.1.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 544. [BasicTransformerBlock] down_blocks.1.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 545. [AnimateDiffTransformer3D] down_blocks.1.motion_modules.1
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 546. [ResnetBlock2D] down_blocks.2.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 547. [Attention] down_blocks.2.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 548. [Attention] down_blocks.2.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 549. [BasicTransformerBlock] down_blocks.2.attentions.0.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 550. [Transformer2DModel] down_blocks.2.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 551. [Attention] down_blocks.2.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 552. [Attention] down_blocks.2.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 553. [BasicTransformerBlock] down_blocks.2.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 554. [AnimateDiffTransformer3D] down_blocks.2.motion_modules.0
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 555. [ResnetBlock2D] down_blocks.2.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 556. [Attention] down_blocks.2.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 557. [Attention] down_blocks.2.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 558. [BasicTransformerBlock] down_blocks.2.attentions.1.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 559. [Transformer2DModel] down_blocks.2.attentions.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 560. [Attention] down_blocks.2.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 561. [Attention] down_blocks.2.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 562. [BasicTransformerBlock] down_blocks.2.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 563. [AnimateDiffTransformer3D] down_blocks.2.motion_modules.1
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 564. [ResnetBlock2D] down_blocks.3.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 565. [Attention] down_blocks.3.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 566. [Attention] down_blocks.3.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 567. [BasicTransformerBlock] down_blocks.3.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 568. [AnimateDiffTransformer3D] down_blocks.3.motion_modules.0
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 569. [ResnetBlock2D] down_blocks.3.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 570. [Attention] down_blocks.3.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 571. [Attention] down_blocks.3.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 572. [BasicTransformerBlock] down_blocks.3.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 573. [AnimateDiffTransformer3D] down_blocks.3.motion_modules.1
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 574. [ResnetBlock2D] mid_block.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 575. [Attention] mid_block.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 576. [Attention] mid_block.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 577. [BasicTransformerBlock] mid_block.attentions.0.transformer_blocks.0
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 578. [Transformer2DModel] mid_block.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 579. [Attention] mid_block.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 580. [Attention] mid_block.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 581. [BasicTransformerBlock] mid_block.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 582. [AnimateDiffTransformer3D] mid_block.motion_modules.0
+       Input:  [(32, 1280, 4, 4), (), (), (), ()]
+       Output: [(32, 1280, 4, 4)]
+
+ 583. [ResnetBlock2D] mid_block.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 584. [ResnetBlock2D] up_blocks.0.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 585. [Attention] up_blocks.0.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 586. [Attention] up_blocks.0.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 587. [BasicTransformerBlock] up_blocks.0.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 588. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.0
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 589. [ResnetBlock2D] up_blocks.0.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 590. [Attention] up_blocks.0.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 591. [Attention] up_blocks.0.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 592. [BasicTransformerBlock] up_blocks.0.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 593. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.1
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 594. [ResnetBlock2D] up_blocks.0.resnets.2
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 595. [Attention] up_blocks.0.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 596. [Attention] up_blocks.0.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 597. [BasicTransformerBlock] up_blocks.0.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 598. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.2
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 599. [ResnetBlock2D] up_blocks.1.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 600. [Attention] up_blocks.1.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 601. [Attention] up_blocks.1.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 602. [BasicTransformerBlock] up_blocks.1.attentions.0.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 603. [Transformer2DModel] up_blocks.1.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 604. [Attention] up_blocks.1.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 605. [Attention] up_blocks.1.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 606. [BasicTransformerBlock] up_blocks.1.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 607. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.0
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 608. [ResnetBlock2D] up_blocks.1.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 609. [Attention] up_blocks.1.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 610. [Attention] up_blocks.1.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 611. [BasicTransformerBlock] up_blocks.1.attentions.1.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 612. [Transformer2DModel] up_blocks.1.attentions.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 613. [Attention] up_blocks.1.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 614. [Attention] up_blocks.1.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 615. [BasicTransformerBlock] up_blocks.1.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 616. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.1
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 617. [ResnetBlock2D] up_blocks.1.resnets.2
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 618. [Attention] up_blocks.1.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 619. [Attention] up_blocks.1.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 620. [BasicTransformerBlock] up_blocks.1.attentions.2.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 621. [Transformer2DModel] up_blocks.1.attentions.2
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 622. [Attention] up_blocks.1.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 623. [Attention] up_blocks.1.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 624. [BasicTransformerBlock] up_blocks.1.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 625. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.2
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 626. [ResnetBlock2D] up_blocks.2.resnets.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 627. [Attention] up_blocks.2.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 628. [Attention] up_blocks.2.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 629. [BasicTransformerBlock] up_blocks.2.attentions.0.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 630. [Transformer2DModel] up_blocks.2.attentions.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 631. [Attention] up_blocks.2.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 632. [Attention] up_blocks.2.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 633. [BasicTransformerBlock] up_blocks.2.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 634. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.0
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 635. [ResnetBlock2D] up_blocks.2.resnets.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 636. [Attention] up_blocks.2.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 637. [Attention] up_blocks.2.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 638. [BasicTransformerBlock] up_blocks.2.attentions.1.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 639. [Transformer2DModel] up_blocks.2.attentions.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 640. [Attention] up_blocks.2.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 641. [Attention] up_blocks.2.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 642. [BasicTransformerBlock] up_blocks.2.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 643. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.1
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 644. [ResnetBlock2D] up_blocks.2.resnets.2
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 645. [Attention] up_blocks.2.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 646. [Attention] up_blocks.2.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 647. [BasicTransformerBlock] up_blocks.2.attentions.2.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 648. [Transformer2DModel] up_blocks.2.attentions.2
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 649. [Attention] up_blocks.2.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 650. [Attention] up_blocks.2.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 651. [BasicTransformerBlock] up_blocks.2.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 652. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.2
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 653. [ResnetBlock2D] up_blocks.3.resnets.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 654. [Attention] up_blocks.3.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 655. [Attention] up_blocks.3.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 656. [BasicTransformerBlock] up_blocks.3.attentions.0.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 657. [Transformer2DModel] up_blocks.3.attentions.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 658. [Attention] up_blocks.3.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 659. [Attention] up_blocks.3.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 660. [BasicTransformerBlock] up_blocks.3.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 661. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.0
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 662. [ResnetBlock2D] up_blocks.3.resnets.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 663. [Attention] up_blocks.3.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 664. [Attention] up_blocks.3.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 665. [BasicTransformerBlock] up_blocks.3.attentions.1.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 666. [Transformer2DModel] up_blocks.3.attentions.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 667. [Attention] up_blocks.3.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 668. [Attention] up_blocks.3.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 669. [BasicTransformerBlock] up_blocks.3.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 670. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.1
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 671. [ResnetBlock2D] up_blocks.3.resnets.2
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 672. [Attention] up_blocks.3.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 673. [Attention] up_blocks.3.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 674. [BasicTransformerBlock] up_blocks.3.attentions.2.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 675. [Transformer2DModel] up_blocks.3.attentions.2
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 676. [Attention] up_blocks.3.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 677. [Attention] up_blocks.3.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 678. [BasicTransformerBlock] up_blocks.3.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 679. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.2
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 680. [ResnetBlock2D] down_blocks.0.resnets.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 681. [Attention] down_blocks.0.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 682. [Attention] down_blocks.0.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 683. [BasicTransformerBlock] down_blocks.0.attentions.0.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 684. [Transformer2DModel] down_blocks.0.attentions.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 685. [Attention] down_blocks.0.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 686. [Attention] down_blocks.0.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 687. [BasicTransformerBlock] down_blocks.0.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 688. [AnimateDiffTransformer3D] down_blocks.0.motion_modules.0
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 689. [ResnetBlock2D] down_blocks.0.resnets.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 690. [Attention] down_blocks.0.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 691. [Attention] down_blocks.0.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 692. [BasicTransformerBlock] down_blocks.0.attentions.1.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 693. [Transformer2DModel] down_blocks.0.attentions.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 694. [Attention] down_blocks.0.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 695. [Attention] down_blocks.0.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 696. [BasicTransformerBlock] down_blocks.0.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 697. [AnimateDiffTransformer3D] down_blocks.0.motion_modules.1
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 698. [ResnetBlock2D] down_blocks.1.resnets.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 699. [Attention] down_blocks.1.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 700. [Attention] down_blocks.1.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 701. [BasicTransformerBlock] down_blocks.1.attentions.0.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 702. [Transformer2DModel] down_blocks.1.attentions.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 703. [Attention] down_blocks.1.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 704. [Attention] down_blocks.1.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 705. [BasicTransformerBlock] down_blocks.1.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 706. [AnimateDiffTransformer3D] down_blocks.1.motion_modules.0
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 707. [ResnetBlock2D] down_blocks.1.resnets.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 708. [Attention] down_blocks.1.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 709. [Attention] down_blocks.1.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 710. [BasicTransformerBlock] down_blocks.1.attentions.1.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 711. [Transformer2DModel] down_blocks.1.attentions.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 712. [Attention] down_blocks.1.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 713. [Attention] down_blocks.1.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 714. [BasicTransformerBlock] down_blocks.1.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 715. [AnimateDiffTransformer3D] down_blocks.1.motion_modules.1
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 716. [ResnetBlock2D] down_blocks.2.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 717. [Attention] down_blocks.2.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 718. [Attention] down_blocks.2.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 719. [BasicTransformerBlock] down_blocks.2.attentions.0.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 720. [Transformer2DModel] down_blocks.2.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 721. [Attention] down_blocks.2.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 722. [Attention] down_blocks.2.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 723. [BasicTransformerBlock] down_blocks.2.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 724. [AnimateDiffTransformer3D] down_blocks.2.motion_modules.0
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 725. [ResnetBlock2D] down_blocks.2.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 726. [Attention] down_blocks.2.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 727. [Attention] down_blocks.2.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 728. [BasicTransformerBlock] down_blocks.2.attentions.1.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 729. [Transformer2DModel] down_blocks.2.attentions.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 730. [Attention] down_blocks.2.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 731. [Attention] down_blocks.2.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 732. [BasicTransformerBlock] down_blocks.2.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 733. [AnimateDiffTransformer3D] down_blocks.2.motion_modules.1
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 734. [ResnetBlock2D] down_blocks.3.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 735. [Attention] down_blocks.3.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 736. [Attention] down_blocks.3.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 737. [BasicTransformerBlock] down_blocks.3.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 738. [AnimateDiffTransformer3D] down_blocks.3.motion_modules.0
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 739. [ResnetBlock2D] down_blocks.3.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 740. [Attention] down_blocks.3.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 741. [Attention] down_blocks.3.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 742. [BasicTransformerBlock] down_blocks.3.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 743. [AnimateDiffTransformer3D] down_blocks.3.motion_modules.1
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 744. [ResnetBlock2D] mid_block.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 745. [Attention] mid_block.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 746. [Attention] mid_block.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 747. [BasicTransformerBlock] mid_block.attentions.0.transformer_blocks.0
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 748. [Transformer2DModel] mid_block.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 749. [Attention] mid_block.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 750. [Attention] mid_block.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 751. [BasicTransformerBlock] mid_block.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 752. [AnimateDiffTransformer3D] mid_block.motion_modules.0
+       Input:  [(32, 1280, 4, 4), (), (), (), ()]
+       Output: [(32, 1280, 4, 4)]
+
+ 753. [ResnetBlock2D] mid_block.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 754. [ResnetBlock2D] up_blocks.0.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 755. [Attention] up_blocks.0.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 756. [Attention] up_blocks.0.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 757. [BasicTransformerBlock] up_blocks.0.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 758. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.0
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 759. [ResnetBlock2D] up_blocks.0.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 760. [Attention] up_blocks.0.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 761. [Attention] up_blocks.0.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 762. [BasicTransformerBlock] up_blocks.0.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 763. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.1
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 764. [ResnetBlock2D] up_blocks.0.resnets.2
+       Input:  [()]
+       Output: [(32, 1280, 4, 4)]
+
+ 765. [Attention] up_blocks.0.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 766. [Attention] up_blocks.0.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(32, 16, 1280)]
+       Output: [(32, 16, 1280)]
+
+ 767. [BasicTransformerBlock] up_blocks.0.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(32, 16, 1280)]
+
+ 768. [AnimateDiffTransformer3D] up_blocks.0.motion_modules.2
+       Input:  [(32, 1280, 4, 4)]
+       Output: [(32, 1280, 4, 4)]
+
+ 769. [ResnetBlock2D] up_blocks.1.resnets.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 770. [Attention] up_blocks.1.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 771. [Attention] up_blocks.1.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 772. [BasicTransformerBlock] up_blocks.1.attentions.0.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 773. [Transformer2DModel] up_blocks.1.attentions.0
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 774. [Attention] up_blocks.1.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 775. [Attention] up_blocks.1.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 776. [BasicTransformerBlock] up_blocks.1.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 777. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.0
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 778. [ResnetBlock2D] up_blocks.1.resnets.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 779. [Attention] up_blocks.1.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 780. [Attention] up_blocks.1.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 781. [BasicTransformerBlock] up_blocks.1.attentions.1.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 782. [Transformer2DModel] up_blocks.1.attentions.1
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 783. [Attention] up_blocks.1.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 784. [Attention] up_blocks.1.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 785. [BasicTransformerBlock] up_blocks.1.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 786. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.1
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 787. [ResnetBlock2D] up_blocks.1.resnets.2
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 788. [Attention] up_blocks.1.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 789. [Attention] up_blocks.1.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 790. [BasicTransformerBlock] up_blocks.1.attentions.2.transformer_blocks.0
+       Input:  [(32, 64, 1280)]
+       Output: [(32, 64, 1280)]
+
+ 791. [Transformer2DModel] up_blocks.1.attentions.2
+       Input:  [()]
+       Output: [(32, 1280, 8, 8)]
+
+ 792. [Attention] up_blocks.1.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 793. [Attention] up_blocks.1.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(128, 16, 1280)]
+       Output: [(128, 16, 1280)]
+
+ 794. [BasicTransformerBlock] up_blocks.1.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(128, 16, 1280)]
+
+ 795. [AnimateDiffTransformer3D] up_blocks.1.motion_modules.2
+       Input:  [(32, 1280, 8, 8)]
+       Output: [(32, 1280, 8, 8)]
+
+ 796. [ResnetBlock2D] up_blocks.2.resnets.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 797. [Attention] up_blocks.2.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 798. [Attention] up_blocks.2.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 799. [BasicTransformerBlock] up_blocks.2.attentions.0.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 800. [Transformer2DModel] up_blocks.2.attentions.0
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 801. [Attention] up_blocks.2.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 802. [Attention] up_blocks.2.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 803. [BasicTransformerBlock] up_blocks.2.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 804. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.0
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 805. [ResnetBlock2D] up_blocks.2.resnets.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 806. [Attention] up_blocks.2.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 807. [Attention] up_blocks.2.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 808. [BasicTransformerBlock] up_blocks.2.attentions.1.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 809. [Transformer2DModel] up_blocks.2.attentions.1
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 810. [Attention] up_blocks.2.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 811. [Attention] up_blocks.2.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 812. [BasicTransformerBlock] up_blocks.2.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 813. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.1
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 814. [ResnetBlock2D] up_blocks.2.resnets.2
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 815. [Attention] up_blocks.2.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 816. [Attention] up_blocks.2.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 817. [BasicTransformerBlock] up_blocks.2.attentions.2.transformer_blocks.0
+       Input:  [(32, 256, 640)]
+       Output: [(32, 256, 640)]
+
+ 818. [Transformer2DModel] up_blocks.2.attentions.2
+       Input:  [()]
+       Output: [(32, 640, 16, 16)]
+
+ 819. [Attention] up_blocks.2.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 820. [Attention] up_blocks.2.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(512, 16, 640)]
+       Output: [(512, 16, 640)]
+
+ 821. [BasicTransformerBlock] up_blocks.2.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(512, 16, 640)]
+
+ 822. [AnimateDiffTransformer3D] up_blocks.2.motion_modules.2
+       Input:  [(32, 640, 16, 16)]
+       Output: [(32, 640, 16, 16)]
+
+ 823. [ResnetBlock2D] up_blocks.3.resnets.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 824. [Attention] up_blocks.3.attentions.0.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 825. [Attention] up_blocks.3.attentions.0.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 826. [BasicTransformerBlock] up_blocks.3.attentions.0.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 827. [Transformer2DModel] up_blocks.3.attentions.0
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 828. [Attention] up_blocks.3.motion_modules.0.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 829. [Attention] up_blocks.3.motion_modules.0.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 830. [BasicTransformerBlock] up_blocks.3.motion_modules.0.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 831. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.0
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 832. [ResnetBlock2D] up_blocks.3.resnets.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 833. [Attention] up_blocks.3.attentions.1.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 834. [Attention] up_blocks.3.attentions.1.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 835. [BasicTransformerBlock] up_blocks.3.attentions.1.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 836. [Transformer2DModel] up_blocks.3.attentions.1
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 837. [Attention] up_blocks.3.motion_modules.1.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 838. [Attention] up_blocks.3.motion_modules.1.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 839. [BasicTransformerBlock] up_blocks.3.motion_modules.1.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 840. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.1
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+
+ 841. [ResnetBlock2D] up_blocks.3.resnets.2
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 842. [Attention] up_blocks.3.attentions.2.transformer_blocks.0.attn1
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 843. [Attention] up_blocks.3.attentions.2.transformer_blocks.0.attn2
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 844. [BasicTransformerBlock] up_blocks.3.attentions.2.transformer_blocks.0
+       Input:  [(32, 1024, 320)]
+       Output: [(32, 1024, 320)]
+
+ 845. [Transformer2DModel] up_blocks.3.attentions.2
+       Input:  [()]
+       Output: [(32, 320, 32, 32)]
+
+ 846. [Attention] up_blocks.3.motion_modules.2.transformer_blocks.0.attn1
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 847. [Attention] up_blocks.3.motion_modules.2.transformer_blocks.0.attn2
+       Input:  [(2048, 16, 320)]
+       Output: [(2048, 16, 320)]
+
+ 848. [BasicTransformerBlock] up_blocks.3.motion_modules.2.transformer_blocks.0
+       Input:  [()]
+       Output: [(2048, 16, 320)]
+
+ 849. [AnimateDiffTransformer3D] up_blocks.3.motion_modules.2
+       Input:  [(32, 320, 32, 32)]
+       Output: [(32, 320, 32, 32)]
+

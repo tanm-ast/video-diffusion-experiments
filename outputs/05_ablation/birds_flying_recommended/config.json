@@ -1,0 +1,9 @@
+{
+  "experiment_id": "birds_flying_recommended",
+  "video_name": "birds_flying",
+  "prompt": "birds flying across a blue sky, nature documentary, smooth motion, consistent shapes",
+  "negative_prompt": "flickering, morphing birds, changing shapes, unstable, jittery feathers, bad quality, blurry, distorted",
+  "guidance_scale": 5.0,
+  "num_inference_steps": 35,
+  "hypothesis": "recommended"
+}

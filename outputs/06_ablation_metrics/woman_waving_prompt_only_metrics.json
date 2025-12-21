@@ -1,0 +1,148 @@
+{
+  "experiment_id": "woman_waving_prompt_only",
+  "video_name": "woman_waving",
+  "hypothesis": "prompt_only",
+  "config": {
+    "experiment_id": "woman_waving_prompt_only",
+    "video_name": "woman_waving",
+    "prompt": "a woman waving her hand, portrait, studio lighting, smooth natural motion",
+    "negative_prompt": "flickering hands, morphing fingers, jittery, distorted hands, bad quality, blurry, deformed",
+    "guidance_scale": 7.5,
+    "num_inference_steps": 25,
+    "hypothesis": "prompt_only"
+  },
+  "num_frames": 16,
+  "mse_mean": 0.008689600415527821,
+  "mse_std": 0.0033674363313511983,
+  "mse_variance": 1.1339627445704018e-05,
+  "psnr_mean": 20.868474343274794,
+  "lpips_mean": 0.1554233322540919,
+  "lpips_std": 0.03869132202955621,
+  "flow_magnitude_mean": 2.273532176017761,
+  "flow_variance": 0.6860962814035094,
+  "warp_error_mean": 0.010256714218606551,
+  "temporal_consistency_score": 9.399975481900492,
+  "flicker_index": 0.12195741278784615,
+  "frame_metrics": [
+    {
+      "frame_idx": 0,
+      "mse": 0.006899813190102577,
+      "psnr": 21.611626674664976,
+      "lpips": 0.13937343657016754,
+      "flow_magnitude": 2.433565855026245,
+      "warp_error": 0.008950992487370968
+    },
+    {
+      "frame_idx": 1,
+      "mse": 0.008025932125747204,
+      "psnr": 20.955045173579858,
+      "lpips": 0.15418791770935059,
+      "flow_magnitude": 3.2778942584991455,
+      "warp_error": 0.009550409391522408
+    },
+    {
+      "frame_idx": 2,
+      "mse": 0.006051555275917053,
+      "psnr": 22.1813299543932,
+      "lpips": 0.1779988557100296,
+      "flow_magnitude": 2.863678455352783,
+      "warp_error": 0.006627237424254417
+    },
+    {
+      "frame_idx": 3,
+      "mse": 0.008700312115252018,
+      "psnr": 20.604651672089357,
+      "lpips": 0.19865909218788147,
+      "flow_magnitude": 2.5692591667175293,
+      "warp_error": 0.01044407207518816
+    },
+    {
+      "frame_idx": 4,
+      "mse": 0.006306184455752373,
+      "psnr": 22.00233330298577,
+      "lpips": 0.17349466681480408,
+      "flow_magnitude": 3.4143831729888916,
+      "warp_error": 0.007650755345821381
+    },
+    {
+      "frame_idx": 5,
+      "mse": 0.00812158640474081,
+      "psnr": 20.903591309149792,
+      "lpips": 0.17730383574962616,
+      "flow_magnitude": 3.0237693786621094,
+      "warp_error": 0.010351075790822506
+    },
+    {
+      "frame_idx": 6,
+      "mse": 0.006163363810628653,
+      "psnr": 22.101821960069273,
+      "lpips": 0.14323067665100098,
+      "flow_magnitude": 2.2247443199157715,
+      "warp_error": 0.008165085688233376
+    },
+    {
+      "frame_idx": 7,
+      "mse": 0.016623470932245255,
+      "psnr": 17.792782916626685,
+      "lpips": 0.1653946042060852,
+      "flow_magnitude": 1.9804116487503052,
+      "warp_error": 0.01828959211707115
+    },
+    {
+      "frame_idx": 8,
+      "mse": 0.007416630629450083,
+      "psnr": 21.297933496232506,
+      "lpips": 0.09476754814386368,
+      "flow_magnitude": 0.7064992785453796,
+      "warp_error": 0.008082826621830463
+    },
+    {
+      "frame_idx": 9,
+      "mse": 0.008266083896160126,
+      "psnr": 20.827001911841805,
+      "lpips": 0.09093233942985535,
+      "flow_magnitude": 0.8391203284263611,
+      "warp_error": 0.009446750394999981
+    },
+    {
+      "frame_idx": 10,
+      "mse": 0.005417009349912405,
+      "psnr": 22.66240414807507,
+      "lpips": 0.0883009061217308,
+      "flow_magnitude": 1.0292619466781616,
+      "warp_error": 0.0062836105935275555
+    },
+    {
+      "frame_idx": 11,
+      "mse": 0.007947515696287155,
+      "psnr": 20.997686056838198,
+      "lpips": 0.16323241591453552,
+      "flow_magnitude": 2.0477657318115234,
+      "warp_error": 0.01042872667312622
+    },
+    {
+      "frame_idx": 12,
+      "mse": 0.016364170238375664,
+      "psnr": 17.861060111339068,
+      "lpips": 0.22884277999401093,
+      "flow_magnitude": 3.0517656803131104,
+      "warp_error": 0.017718395218253136
+    },
+    {
+      "frame_idx": 13,
+      "mse": 0.011467818170785904,
+      "psnr": 19.405192016734397,
+      "lpips": 0.18600322306156158,
+      "flow_magnitude": 2.590904951095581,
+      "warp_error": 0.013681545853614807
+    },
+    {
+      "frame_idx": 14,
+      "mse": 0.00657255994156003,
+      "psnr": 21.822654444501957,
+      "lpips": 0.149627685546875,
+      "flow_magnitude": 2.0499584674835205,
+      "warp_error": 0.008179637603461742
+    }
+  ]
+}

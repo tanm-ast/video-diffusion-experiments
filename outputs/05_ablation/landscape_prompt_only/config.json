@@ -1,0 +1,9 @@
+{
+  "experiment_id": "landscape_prompt_only",
+  "video_name": "landscape",
+  "prompt": "a beautiful mountain landscape, lake reflection, golden hour, still water, serene",
+  "negative_prompt": "flickering water, rippling, moving clouds, windy, bad quality, blurry, distorted",
+  "guidance_scale": 7.5,
+  "num_inference_steps": 25,
+  "hypothesis": "prompt_only"
+}

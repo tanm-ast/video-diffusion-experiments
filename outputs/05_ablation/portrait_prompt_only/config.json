@@ -1,0 +1,9 @@
+{
+  "experiment_id": "portrait_prompt_only",
+  "video_name": "portrait",
+  "prompt": "portrait of a man with glasses, professional photo, static pose, consistent lighting",
+  "negative_prompt": "flickering, changing expression, morphing face, unstable features, bad quality, blurry, distorted",
+  "guidance_scale": 7.5,
+  "num_inference_steps": 25,
+  "hypothesis": "prompt_only"
+}

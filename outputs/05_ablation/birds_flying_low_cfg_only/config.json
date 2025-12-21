@@ -1,0 +1,9 @@
+{
+  "experiment_id": "birds_flying_low_cfg_only",
+  "video_name": "birds_flying",
+  "prompt": "birds flying across a blue sky, nature documentary, consistent shapes",
+  "negative_prompt": "bad quality, blurry, distorted",
+  "guidance_scale": 5.0,
+  "num_inference_steps": 25,
+  "hypothesis": "cfg_only"
+}
