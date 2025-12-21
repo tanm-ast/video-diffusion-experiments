@@ -1,7 +1,0 @@
-video,best_cfg_mean_mse,best_cfg_mean_lpips,best_cfg_mean_flow_magnitude,best_cfg_flow_magnitude_variance,best_cfg_mean_warp_error,best_cfg_warp_error_variance,best_cfg_flicker_index,best_steps_mean_mse,best_steps_mean_lpips,best_steps_mean_flow_magnitude,best_steps_flow_magnitude_variance,best_steps_mean_warp_error,best_steps_warp_error_variance,best_steps_flicker_index
-birds_flying,9.0,9.0,9.0,9.0,7.5,9.0,9.0,15,15,15,15,15,15,15
-corgi_beach,9.0,9.0,7.0,7.0,7.5,9.0,9.0,15,20,15,15,15,15,15
-landscape,8.0,9.0,9.0,7.5,8.0,9.0,9.0,15,15,15,15,15,15,15
-mig21_missile,7.0,7.0,5.0,5.0,7.0,9.0,7.0,20,15,30,30,20,20,15
-portrait,9.0,9.0,9.0,9.0,9.0,9.0,9.0,40,50,40,40,40,15,40
-woman_waving,9.0,9.0,9.0,8.0,9.0,9.0,9.0,25,50,50,20,50,30,25

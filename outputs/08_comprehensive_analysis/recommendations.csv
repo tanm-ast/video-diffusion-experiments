@@ -1,7 +1,0 @@
-video,recommended_cfg,cfg_confidence,recommended_steps,steps_confidence,prompt_wins,prompt_losses,use_enhanced_prompt
-birds_flying,9.0,0.875,15,1.0,6,1,Yes
-corgi_beach,9.0,0.625,15,0.75,7,1,Yes
-landscape,9.0,0.625,15,1.0,2,1,Yes
-mig21_missile,7.0,0.625,20,0.375,0,7,No
-portrait,9.0,1.0,40,0.625,0,8,No
-woman_waving,9.0,0.875,50,0.625,8,0,Yes

@@ -1,9 +1,0 @@
-metric,Higher CFG better,Lower CFG better,Mixed,dominant_trend
-mean_mse,4,0,2,Higher CFG better
-mean_lpips,6,0,0,Higher CFG better
-mean_flow_magnitude,3,1,2,Higher CFG better
-flow_magnitude_variance,4,2,0,Higher CFG better
-mean_warp_error,3,1,2,Higher CFG better
-warp_error_variance,6,0,0,Higher CFG better
-flicker_index,4,0,2,Higher CFG better
-temporal_consistency_score,6,0,0,Higher CFG better

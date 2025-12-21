@@ -1,9 +1,0 @@
-metric,steps_15,steps_20,steps_25,steps_30,steps_40,steps_50,winner_steps,winner_count
-mean_mse,3,1,0,0,1,1,15,3
-mean_lpips,3,1,0,0,0,2,15,3
-mean_flow_magnitude,3,0,0,1,1,1,15,3
-flow_magnitude_variance,3,1,0,1,1,0,15,3
-mean_warp_error,3,1,0,0,1,1,15,3
-warp_error_variance,4,1,0,1,0,0,15,4
-flicker_index,4,1,0,0,1,0,15,4
-temporal_consistency_score,3,1,0,0,0,2,15,3
