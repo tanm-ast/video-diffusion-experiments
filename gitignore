@@ -4,6 +4,10 @@ outputs/
 *.mp4
 *.avi
 
+# Ignore generated frames and GIFs (large files)
+outputs/05_grid_search/*/frames/
+outputs/05_grid_search/*/*.gif
+
 # Python
 __pycache__/
 *.py[cod]
