@@ -1,0 +1,7 @@
+Video,Best MSE,MSE  delta %,Best LPIPS,LPIPS delta %,Best Flow,Flow delta %
+birds_flying,prompt_only,+45.3%,prompt_only,+10.4%,recommended,+17.2%
+corgi_beach,recommended,+34.5%,prompt_only,+6.5%,recommended,+24.7%
+mig21_missile,prompt_only,+8.6%,prompt_only,+21.5%,cfg_only,+-15.8%
+woman_waving,prompt_only,+60.5%,prompt_only,+47.6%,prompt_only,+50.2%
+portrait,recommended,+17.2%,recommended,+29.3%,recommended,+96.0%
+landscape,prompt_only,+7.5%,prompt_only,+12.4%,prompt_only,+17.6%
