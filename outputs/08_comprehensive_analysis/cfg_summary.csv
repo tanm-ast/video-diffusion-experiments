@@ -1,0 +1,9 @@
+metric,cfg_5.0,cfg_6.0,cfg_7.0,cfg_7.5,cfg_8.0,cfg_9.0,winner_cfg,winner_count
+mean_mse,0,0,1,0,1,4,9.0,4
+mean_lpips,0,0,1,0,0,5,9.0,5
+mean_flow_magnitude,1,0,1,0,0,4,9.0,4
+flow_magnitude_variance,1,0,1,1,1,2,9.0,2
+mean_warp_error,0,0,1,2,1,2,7.5,2
+warp_error_variance,0,0,0,0,0,6,9.0,6
+flicker_index,0,0,1,0,0,5,9.0,5
+temporal_consistency_score,0,0,1,0,0,5,9.0,5

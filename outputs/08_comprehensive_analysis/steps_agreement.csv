@@ -1,0 +1,7 @@
+video,mean_mse_best_steps,mean_lpips_best_steps,mean_flow_magnitude_best_steps,flow_magnitude_variance_best_steps,mean_warp_error_best_steps,warp_error_variance_best_steps,flicker_index_best_steps,temporal_consistency_score_best_steps,unique_values,agreement_score,most_common_steps
+birds_flying,15,15,15,15,15,15,15,15,1,1.0,15
+corgi_beach,15,20,15,15,15,15,15,20,2,0.8571428571428572,15
+landscape,15,15,15,15,15,15,15,15,1,1.0,15
+mig21_missile,20,15,30,30,20,20,15,15,3,0.7142857142857143,20
+portrait,40,50,40,40,40,15,40,50,3,0.7142857142857143,40
+woman_waving,50,50,50,20,50,30,20,50,3,0.7142857142857143,50

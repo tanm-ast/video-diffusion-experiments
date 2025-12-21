@@ -1,0 +1,156 @@
+{
+  "video_name": "birds_flying",
+  "experiment_id": "birds_flying_cfg7.5_steps20",
+  "num_frames": 16,
+  "guidance_scale": 7.5,
+  "num_inference_steps": 20,
+  "phase": "steps_ablation",
+  "mean_mse": 0.03515415005385876,
+  "std_mse": 0.006599016872137362,
+  "mean_psnr": 14.610788736173939,
+  "mean_lpips": 0.21939262350400288,
+  "std_lpips": 0.010422179871062117,
+  "mean_flow_magnitude": 6.16578696568807,
+  "flow_magnitude_variance": 0.40717985144052565,
+  "mean_warp_error": 0.03946164858837922,
+  "warp_error_variance": 4.274245549673245e-05,
+  "temporal_consistency_score": 14.58290412089716,
+  "flicker_index": 0.21355376073292323,
+  "frame_metrics": [
+    {
+      "frame_idx": 0,
+      "mse": 0.031694602221250534,
+      "psnr": 14.990146944110137,
+      "lpips": 0.21807755529880524,
+      "flow_magnitude_mean": 6.043665885925293,
+      "flow_magnitude_std": 2.563540458679199,
+      "warp_error": 0.037096213549375534
+    },
+    {
+      "frame_idx": 1,
+      "mse": 0.03402924910187721,
+      "psnr": 14.68147634051684,
+      "lpips": 0.2304968386888504,
+      "flow_magnitude_mean": 6.065107345581055,
+      "flow_magnitude_std": 2.7097489833831787,
+      "warp_error": 0.03975245729088783
+    },
+    {
+      "frame_idx": 2,
+      "mse": 0.032885387539863586,
+      "psnr": 14.829970358046472,
+      "lpips": 0.2211059331893921,
+      "flow_magnitude_mean": 5.80106258392334,
+      "flow_magnitude_std": 2.5021469593048096,
+      "warp_error": 0.03741501644253731
+    },
+    {
+      "frame_idx": 3,
+      "mse": 0.03192029893398285,
+      "psnr": 14.95933050129225,
+      "lpips": 0.21121010184288025,
+      "flow_magnitude_mean": 5.873597621917725,
+      "flow_magnitude_std": 2.4397454261779785,
+      "warp_error": 0.03736497089266777
+    },
+    {
+      "frame_idx": 4,
+      "mse": 0.03536196053028107,
+      "psnr": 14.514636649293449,
+      "lpips": 0.22758620977401733,
+      "flow_magnitude_mean": 7.076050758361816,
+      "flow_magnitude_std": 2.9735968112945557,
+      "warp_error": 0.03846708685159683
+    },
+    {
+      "frame_idx": 5,
+      "mse": 0.026346169412136078,
+      "psnr": 15.79282519886169,
+      "lpips": 0.22305071353912354,
+      "flow_magnitude_mean": 5.478420257568359,
+      "flow_magnitude_std": 2.4887783527374268,
+      "warp_error": 0.03058047778904438
+    },
+    {
+      "frame_idx": 6,
+      "mse": 0.02756574936211109,
+      "psnr": 15.59630196930178,
+      "lpips": 0.21699991822242737,
+      "flow_magnitude_mean": 5.518928527832031,
+      "flow_magnitude_std": 2.3971965312957764,
+      "warp_error": 0.032506540417671204
+    },
+    {
+      "frame_idx": 7,
+      "mse": 0.03686164319515228,
+      "psnr": 14.334253089790936,
+      "lpips": 0.20981910824775696,
+      "flow_magnitude_mean": 5.590155601501465,
+      "flow_magnitude_std": 2.9432101249694824,
+      "warp_error": 0.04211634770035744
+    },
+    {
+      "frame_idx": 8,
+      "mse": 0.03966817632317543,
+      "psnr": 14.015577650158198,
+      "lpips": 0.23297946155071259,
+      "flow_magnitude_mean": 5.867776393890381,
+      "flow_magnitude_std": 2.7387077808380127,
+      "warp_error": 0.041447337716817856
+    },
+    {
+      "frame_idx": 9,
+      "mse": 0.03182777762413025,
+      "psnr": 14.971936849502356,
+      "lpips": 0.23202019929885864,
+      "flow_magnitude_mean": 7.71563720703125,
+      "flow_magnitude_std": 3.64955735206604,
+      "warp_error": 0.03404627740383148
+    },
+    {
+      "frame_idx": 10,
+      "mse": 0.027967549860477448,
+      "psnr": 15.533455789871942,
+      "lpips": 0.20585402846336365,
+      "flow_magnitude_mean": 6.127768516540527,
+      "flow_magnitude_std": 2.8831419944763184,
+      "warp_error": 0.03238863870501518
+    },
+    {
+      "frame_idx": 11,
+      "mse": 0.045546844601631165,
+      "psnr": 13.41541704740754,
+      "lpips": 0.22917501628398895,
+      "flow_magnitude_mean": 6.225491523742676,
+      "flow_magnitude_std": 2.9880404472351074,
+      "warp_error": 0.05085703730583191
+    },
+    {
+      "frame_idx": 12,
+      "mse": 0.05210535228252411,
+      "psnr": 12.831176635070658,
+      "lpips": 0.22158026695251465,
+      "flow_magnitude_mean": 5.967496395111084,
+      "flow_magnitude_std": 2.806443214416504,
+      "warp_error": 0.056012559682130814
+    },
+    {
+      "frame_idx": 13,
+      "mse": 0.03562357649207115,
+      "psnr": 14.48262480920002,
+      "lpips": 0.19449354708194733,
+      "flow_magnitude_mean": 5.876817226409912,
+      "flow_magnitude_std": 2.551027297973633,
+      "warp_error": 0.04121080040931702
+    },
+    {
+      "frame_idx": 14,
+      "mse": 0.0379079133272171,
+      "psnr": 14.212701210184823,
+      "lpips": 0.21644045412540436,
+      "flow_magnitude_mean": 7.258828639984131,
+      "flow_magnitude_std": 3.2978484630584717,
+      "warp_error": 0.040662966668605804
+    }
+  ]
+}
