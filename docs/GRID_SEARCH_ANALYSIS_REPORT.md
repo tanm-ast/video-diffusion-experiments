@@ -1,8 +1,7 @@
 # AnimateDiff Temporal Consistency: Grid Search Ablation Study
 
 **Project:** Video Diffusion Temporal Consistency Research  
-**Collaboration:** Deccan AI  
-**Date:** December 2024
+**Date:** December 2025
 
 ---
 
