@@ -304,17 +304,7 @@ How well do the 8 metrics agree on optimal values?
 - `07_analyze_grid_search.py` - Basic analysis
 - `08_analyze_comprehensive.py` - Full multi-metric analysis
 
-### Data
-- `outputs/06_grid_search_metrics/grid_search_results.json` - Raw metrics
-- `outputs/08_comprehensive_analysis/*.csv` - All analysis tables
 
-### GIFs for Presentation
-Copy selected GIFs to `assets/` folder:
-```bash
-mkdir assets
-cp outputs/05_grid_search/portrait_cfg5.0_steps25/portrait_cfg5.0_steps25.gif assets/
-cp outputs/05_grid_search/portrait_cfg9.0_steps25/portrait_cfg9.0_steps25.gif assets/
-# ... etc
 ```
 
 ---
