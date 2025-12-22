@@ -230,4 +230,4 @@ See [docs/GRID_SEARCH_ANALYSIS_REPORT.md](docs/GRID_SEARCH_ANALYSIS_REPORT.md) f
 
 ## License
 
-Research project for Deccan AI collaboration.
+Research project
