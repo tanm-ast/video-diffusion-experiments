@@ -2,8 +2,8 @@
 
 Systematic study of hyperparameter effects on temporal consistency in AnimateDiff video generation.
 
-**Collaboration:** Deccan AI  
-**Status:** Grid Search Ablation Complete ✓
+
+**Status:** Grid Search Ablation Complete
 
 ---
 
