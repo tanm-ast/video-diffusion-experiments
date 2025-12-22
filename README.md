@@ -181,7 +181,7 @@ Per-Video Results:
 
 ## Detailed Report
 
-See [docs/GRID_SEARCH_ANALYSIS_REPORT.md](reports/GRID_SEARCH_ANALYSIS_REPORT.md) for:
+See [docs/GRID_SEARCH_ANALYSIS_REPORT.md](docs/GRID_SEARCH_ANALYSIS_REPORT.md) for:
 - Full methodology
 - All data tables
 - Per-video breakdowns
